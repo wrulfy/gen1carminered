@@ -65,8 +65,8 @@ export const Conditions: {[id: string]: ModdedConditionData} = {
 			} else {
 				this.add('-status', target, 'slp');
 			}
-			// 1-7 turns
-			this.effectData.startTime = this.random(1, 8);
+			// 2-4 turns
+			this.effectData.startTime = this.random(2, 4);
 			this.effectData.time = this.effectData.startTime;
 		},
 		onBeforeMovePriority: 10,
