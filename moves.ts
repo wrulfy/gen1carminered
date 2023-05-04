@@ -7,6 +7,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	absorb: {
 		inherit: true,
 		desc: "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
+		basePower: 30,
+		pp: 30,
 	},
 	acid: {
 		inherit: true,
@@ -20,10 +22,20 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 		target: "normal",
 	},
+	acidarmor: {
+		inherit: true,
+		pp: 20,
+	},
+	agility: {
+		inherit: true,
+		pp: 10,
+		type: "Flying",
+	},
 	amnesia: {
 		inherit: true,
 		desc: "Raises the user's Special by 2 stages.",
 		shortDesc: "Raises the user's Special by 2.",
+		pp: 10,
 		boosts: {
 			spd: 2,
 			spa: 2,
@@ -43,6 +55,13 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	barrage: {
 		inherit: true,
 		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		accuracy: 95,
+		basePower: 25,
+		type: "Rock",
+	},
+	barrier: {
+		inherit: true,
+		pp: 15,
 	},
 	bide: {
 		inherit: true,
@@ -50,6 +69,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		priority: 0,
 		accuracy: true,
 		ignoreEvasion: true,
+		pp: 20,
 		condition: {
 			duration: 2,
 			durationCallback(target, source, effect) {
@@ -121,12 +141,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				}
 			},
 		},
-		type: "???", // Will look as Normal but it's STAB-less
+		type: "Rock", // needs testing, it should display as rock type but be no different from regular bide, if doing so changes its behavior, it goes back to ???
 	},
 	bind: {
 		inherit: true,
 		desc: "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
 		shortDesc: "Prevents the target from moving for 2-5 turns.",
+		accuracy: 75,
+		basePower: 35,
+		category: "Special",
 		ignoreImmunity: true,
 		volatileStatus: 'partiallytrapped',
 		self: {
@@ -146,6 +169,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				}
 			}
 		},
+		type: "Grass",	
 	},
 	bite: {
 		inherit: true,
@@ -159,17 +183,26 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	blizzard: {
 		inherit: true,
-		accuracy: 90,
+		accuracy: 85,
 		target: "normal",
 	},
+	bodyslam: {
+		inherit: true,
+	},
+	boneclub: {
+		inherit: true,
+		accuracy: 100,
+	},	
 	bonemerang: {
 		inherit: true,
 		desc: "Hits twice. If the first hit breaks the target's substitute, the move ends.",
+		accuracy: 95,
 	},
 	bubble: {
 		inherit: true,
 		desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 		shortDesc: "33% chance to lower the target's Speed by 1.",
+		pp: 40,
 		secondary: {
 			chance: 33,
 			boosts: {
@@ -194,6 +227,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		desc: "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
 		shortDesc: "Prevents the target from moving for 2-5 turns.",
 		accuracy: 75,
+		basePower: 35,
 		pp: 10,
 		volatileStatus: 'partiallytrapped',
 		self: {
@@ -217,17 +251,47 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	cometpunch: {
 		inherit: true,
 		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		accuracy: 95,
+		basePower: 25,
+		pp: 20,
+		type: "Fighting",	
+	},
+	confuseray: {
+		inherit: true
+		desc: "Has a 10% chance to confuse the target.",
+		shortDesc: "10% chance to confuse the target.",
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Confuse Ray",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: null, // I have no idea if this works, I just need to disable this effect
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+	},
+	confusion: {
+		inherit: true,
+		basePower: 40,
+		pp: 30,		
 	},
 	constrict: {
 		inherit: true,
 		desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 		shortDesc: "33% chance to lower the target's Speed by 1.",
+		basePower: 90,
+		pp: 15,
+		
 		secondary: {
 			chance: 33,
 			boosts: {
 				spe: -1,
 			},
 		},
+		type: "Bug",
 	},
 	conversion: {
 		inherit: true,
@@ -282,7 +346,16 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	crabhammer: {
 		inherit: true,
+		accuracy: 90,
 		critRatio: 2,
+	},
+	cut: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 55,
+		category: "Special",
+		pp: 25,
+		type: "Grass",
 	},
 	defensecurl: {
 		inherit: true,
@@ -494,31 +567,23 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	haze: {
 		inherit: true,
-		desc: "Resets the stat stages of both Pokemon to 0 and removes stat reductions due to burn and paralysis. Resets Toxic counters to 0 and removes the effect of confusion, Disable, Focus Energy, Leech Seed, Light Screen, Mist, and Reflect from both Pokemon. Removes the opponent's major status condition.",
-		shortDesc: "Resets all stat changes. Removes foe's status.",
-		onHit(target, source) {
-			this.add('-clearallboost');
-			for (const pokemon of this.getAllActive()) {
-				pokemon.clearBoosts();
-
-				if (pokemon !== source) {
-					// Clears the status from the opponent
-					pokemon.setStatus('');
-				}
-				if (pokemon.status === 'tox') {
-					pokemon.setStatus('psn');
-				}
-				for (const id of Object.keys(pokemon.volatiles)) {
-					if (id === 'residualdmg') {
-						pokemon.volatiles[id].counter = 0;
-					} else {
-						pokemon.removeVolatile(id);
-						this.add('-end', pokemon, id);
-					}
-				}
-			}
+		desc: "Has a 33% chance to lower the target's Evasion by 1 stage.",
+		shortDesc: "33% chance to lower the target's Evasion by 1.",
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHitField() {},
+		secondary: {
+			chance: 33,
+			boosts: {
+				evasion: -1,
+			},
 		},
-		target: "self",
+		target: "normal",
+		type: "Poison",
 	},
 	highjumpkick: {
 		inherit: true,

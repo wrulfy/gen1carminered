@@ -65,8 +65,8 @@ export const Statuses: {[k: string]: ModdedPureEffectData} = {
 			} else {
 				this.add('-status', target, 'slp');
 			}
-			// 1-7 turns
-			this.effectData.startTime = this.random(1, 8);
+			// 2-4 turns
+			this.effectData.startTime = this.random(2, 5);
 			this.effectData.time = this.effectData.startTime;
 		},
 		onBeforeMovePriority: 10,
