@@ -257,7 +257,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Fighting",	
 	},
 	confuseray: { // shadow ball but on the surf tier
-		inherit: true
+		inherit: true,
 		desc: "Has a 10% chance to confuse the target.",
 		shortDesc: "10% chance to confuse the target.",
 		accuracy: 100,
@@ -506,13 +506,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	fireblast: { //since it goes back to 10% burn, and stays at 120/85, this should just work
 		inherit: true,
 	},
-	fireblast: {
-		inherit: true,
-		secondary: {
-			chance: 30,
-			status: 'brn',
-		},
-	},
 	firespin: {// on line with clamp
 		inherit: true,
 		desc: "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
@@ -541,7 +534,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	fissure: {// strong move with recoil instead of OHKO
 		inherit: true,
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",		shortDesc: "Deals 65535 damage. Fails if target is faster.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
 		shortDesc: "Has 1/4 recoil.",
 		accuracy: 90,
 		basePower: 130,
@@ -625,7 +618,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	guillotine: {// strong move with recoil instead of OHKO
 		inherit: true,
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",		shortDesc: "Deals 65535 damage. Fails if target is faster.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
 		shortDesc: "Has 1/4 recoil.",
 		accuracy: 90,
 		basePower: 130,
@@ -654,7 +647,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		category: "Physical",
 		pp: 25,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, wind: 1},
 		onHitField() {},
 		secondary: {
 			chance: 33,
@@ -670,12 +663,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	highjumpkick: {//maybe in the future I'll make crash moves work in the hack, until then it remains as recoil move
 		inherit: true,
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",		shortDesc: "Deals 65535 damage. Fails if target is faster.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
 		shortDesc: "Has 1/4 recoil.",
 		name: "Hi-Jump Kick",
 		onMoveFail(target, source, move) {},
 		basePower: 120,
-		hasCrashDamage: false
+		hasCrashDamage: false,
 		pp: 10,
 		recoil: [25, 100],
 	},
@@ -717,11 +710,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	jumpkick: { // aura sphere in kick form
 		inherit: true,
+		desc: "This move does not check accuracy and hits even if the target is using Dig, Fly, or Withdraw.",
+		shortDesc: "Never misses, even against Dig, Fly, and Withdraw.",
 		basePower: 90,
 		pp: 10,
-		hasCrashDamage: false
-		desc: "This move does not check accuracy and hits even if the target is using Dig or Fly or Withdraw.",
-		shortDesc: "Never misses, even against Dig or Fly or Withdraw.",
+		hasCrashDamage: false,
 		accuracy: true,
 		onMoveFail(target, source, move) {},
 	},
@@ -733,6 +726,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	kinesis: { // now a special move instead of a status move
 		inherit: true,
+		desc: "Has a 33% chance to lower the target's accuracy by 1 stage.",
+		shortDesc: "33% chance to lower the target's accuracy by 1.",
 		accuracy: 100,
 		basePower: 50,
 		category: "Special",
@@ -842,10 +837,29 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			volatileStatus: 'flinch',
 		},
 	},
+	meditate: {
+		inherit: true,
+		pp: 25,
+		type: "Fighting",
+	},
+	megadrain: {
+		inherit: true,
+		basePower: 80,
+	},
+	megakick: {
+		inherit: true,
+		accuracy: 85,
+		pp: 10,
+	},
+	megapunch: {
+		inherit: true,
+		accuracy: 90,
+	},
 	metronome: {
 		inherit: true,
 		desc: "A random move is selected for use, other than Metronome or Struggle.",
 		noMetronome: ["Metronome", "Struggle"],
+		pp: 40,
 		secondary: null,
 		target: "self",
 		type: "Normal",
@@ -877,6 +891,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	minimize: {
 		inherit: true,
 		desc: "Raises the user's evasiveness by 1 stage.",
+		pp: 15,
 	},
 	mirrormove: {
 		inherit: true,
@@ -889,34 +904,98 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.useMove(foe.lastMove.id, pokemon);
 		},
 	},
-	mist: {
+	mist: { //mist effect goes unused and turns into a makeshift icy wind. Intended to make it a 100% to drop speed but didn't make the cut into the hack
 		inherit: true,
-		desc: "While the user remains active, it is protected from having its stat stages lowered by other Pokemon, unless caused by the secondary effect of a move. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
+		desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "33% chance to lower the target's Speed by 1.",
+		accuracy: 100,
+		basePower: 50,
+		pp: 25,
+		category: "Special",
+		flags: {protect: 1, mirror: 1, wind: 1},
+		condition: {},
+		sideCondition: null,
+		volatileStatus: null,
+		secondary: {
+			chance: 33,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "normal",
 	},
-	nightshade: {
+	nightshade: {//reworked into a strong ghost move. Nothing is really lost since seismic toss does the same
 		inherit: true,
-		desc: "Deals damage to the target equal to the user's level. This move ignores type immunity.",
-		shortDesc: "Damage = user's level. Can hit Normal types.",
-		ignoreImmunity: true,
-		basePower: 1,
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+		damage: null,
+		pp: 5,
+		accuracy: 100,
+		category: "Special",
+		ignoreImmunity: false,
+		basePower: 120,
 	},
-	petaldance: {
+	payday: {// dreams in technician
 		inherit: true,
-		desc: "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
-		shortDesc: "Lasts 3-4 turns. Confuses the user afterwards.",
+		basePower: 60,
+	},
+	peck: {
+		inherit: true,
+		basePower: 40,
+		pp: 30,
+	},
+	petaldance: {//now is a regular move
+		inherit: true,
+		desc: "Has a 33% chance to lower the target's Evasion by 1 stage.",
+		shortDesc: "33% chance to lower the target's Evasion by 1.",
+		basePower: 65,
+		pp: 20,
+		self: {},
+		onAfterMove(pokemon) {},
+		onMoveFail() {},
+		target: "normal",
+		secondary: {
+			chance: 33,
+			boosts: {
+				evasion: -1,
+			},
+		},
 	},
 	pinmissile: {
 		inherit: true,
 		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		accuracy: 95,
+		basePower: 25,
+	},
+	poisongas: {//now is just toxic
+		inherit: true,
+		desc: "Badly poisons the target.",
+		shortDesc: "Badly poisons the target.",
+		accuracy: 90,
+		target: "normal",
+		status: 'tox',
+		pp: 10,
 	},
 	poisonsting: {
 		inherit: true,
 		desc: "Has a 20% chance to poison the target.",
 		shortDesc: "20% chance to poison the target.",
+		basePower: 20,
+		pp: 40,
 		secondary: {
 			chance: 20,
 			status: 'psn',
 		},
+	},
+	poisonpowder: {
+		inherit: true,
+		accuracy: 100,
+	},
+	pound: {
+		inherit: true,
+	},
+	psybeam: {
+		inherit: true,
 	},
 	psychic: {
 		inherit: true,
@@ -932,12 +1011,23 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	psywave: {
 		inherit: true,
-		basePower: 1,
+		basePower: 120,
+		accuracy: 85,
+		damageCallback(pokemon) {},
+		pp: 5,
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+	},
+	quickattack: {
+		inherit: true,
 	},
 	rage: {
 		inherit: true,
 		desc: "Once this move is successfully used, the user automatically uses this move every turn and can no longer switch out. During the effect, the user's Attack is raised by 1 stage every time it is hit by the opposing Pokemon, and this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
 		shortDesc: "Lasts forever. Raises user's Attack by 1 when hit.",
+		basePower: 30,
 		self: {
 			volatileStatus: 'rage',
 		},
@@ -963,19 +1053,28 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	razorleaf: {
 		inherit: true,
 		critRatio: 2,
+		basePower: 50,
+		pp: 20,
 		target: "normal",
 	},
-	razorwind: {
+	razorwind: {//now an actual move, basically a stronger aerial ace
 		inherit: true,
-		desc: "This attack charges on the first turn and executes on the second.",
-		shortDesc: "Charges turn 1. Hits turn 2.",
+		desc: "This move does not check accuracy and hits even if the target is using Dig, Fly, or Withdraw.",
+		shortDesc: "Never misses, even against Dig, Fly, and Withdraw.",
+		accuracy: true,
+		basePower: 75,
+		pp: 15,
 		critRatio: 1,
-		target: "normal",
+		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1, wind:1},
+		onTryMove(attacker, defender, move) {},
+		target: "any",
+		type: "Flying",
 	},
 	recover: {
 		inherit: true,
 		desc: "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
 		heal: null,
+		pp: 15,
 		onHit(target) {
 			// Fail when health is 255 or 511 less than max
 			if (target.hp === (target.maxhp - 255) || target.hp === (target.maxhp - 511) || target.hp === target.maxhp) {
@@ -1028,29 +1127,79 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
 		},
 	},
-	roar: {
+	roar: {// now works like screech
 		inherit: true,
-		desc: "No competitive use.",
-		shortDesc: "No competitive use.",
+		desc: "Lowers the target's Defense by 2 stages.",
+		shortDesc: "Lowers the target's Defense by 2.",
+		accuracy: 85,
 		forceSwitch: false,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1},
+		type: "Dragon",
 		onTryHit() {},
+		boosts: {
+			def: -2,
+		},
 		priority: 0,
 	},
-	rockslide: {
+	rockslide: {// now a very strong rock move, on the fireblast line.
 		inherit: true,
 		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
+		accuracy: 85,
+		basePower: 120,
 		secondary: null,
 		target: "normal",
 	},
-	rockthrow: {
+	rockthrow: {// now a basic rock move that actually hits
 		inherit: true,
-		accuracy: 65,
+		accuracy: 100,
+		basePower: 40,
+		pp: 30,
+
 	},
-	sandattack: {
+	rollingkick: {
 		inherit: true,
-		ignoreImmunity: true,
-		type: "Normal",
+		accuracy: 100,
+		basePower: 65,
+		pp: 20,
+	},
+	sandattack: {//now a cross between bubble and mud slap as a basic weak attack
+		inherit: true,
+		desc: "Has a 33% chance to lower the target's accuracy by 1 stage.",
+		shortDesc: "33% chance to lower the target's accuracy by 1.",
+		basePower: 20,
+		category: "Physical",
+		flags: {protect: 1, mirror: 1},
+		pp: 40,
+		boosts: {},
+		secondary: {
+			chance: 33,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+	},
+	scratch: { 
+		inherit: true,
+	},
+	screech: {//now a regular ghost attack
+		inherit: true,
+		desc: "Has a 33% chance to lower the target's Special by 1 stage.",
+		shortDesc: "33% chance to lower the target's Special by 1.",
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		pp: 20,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1,},
+		boosts: {},
+		secondary: {
+			chance: 33,
+			boosts: {
+				spd: -1,
+				spa: -1,
+			},
+		},
+		type: "Ghost",
 	},
 	seismictoss: {
 		inherit: true,
@@ -1062,13 +1211,22 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	selfdestruct: {
 		inherit: true,
 		desc: "The user faints after using this move, unless the target's substitute was broken by the damage. The target's Defense is halved during damage calculation.",
-		basePower: 130,
+		basePower: 140,
 		target: "normal",
+	},
+	sharpen: {
+		inherit: true,
+		pp: 20,
+	},
+	sing: {
+		inherit: true,
+		accuracy: 80,
 	},
 	skullbash: {
 		inherit: true,
 		desc: "This attack charges on the first turn and executes on the second.",
 		shortDesc: "Charges turn 1. Hits turn 2.",
+		basePower: 150,
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -1081,16 +1239,66 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			return null;
 		},
 	},
+	skyattack: { //single turn attack now
+		inherit: true,
+		desc: "Has a 10% chance to flinch the target.",
+		shortDesc: "10% chance to flinch the target.",
+		accuracy: 85,
+		basePower: 120,
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		onTryMove(attacker, defender, move) {},
+	},
+	slam: { // regular dragon move now
+		inherit: true,
+		category: "Physical",
+		accuracy: 90,
+		type: "Dragon",
+	},
 	slash: {
 		inherit: true,
+		accuracy: 95,
+		pp: 15,
 		critRatio: 2,
 	},
-	sludge: {
+	sleeppowder: {
+		inherit: true,
+		accuracy: 70,
+		pp: 20,
+	},
+	sludge: {// now basically sludge bomb
 		inherit: true,
 		desc: "Has a 40% chance to poison the target.",
 		shortDesc: "40% chance to poison the target.",
+		basePower: 90,
+		pp: 15,
+		secondary: {
+			chance: 40,
+			status: 'psn',
+		},
 	},
-	softboiled: {
+	smog: {// now a regular poison move instead of a joke of a move
+		inherit: true,
+		accuracy: 100,
+		basePower: 65,
+	},
+	smokescreen: {// now a fire attack instead of status
+		inherit: true,
+		desc: "Has a 20% chance to poison the target.",
+		shortDesc: "20% chance to poison the target.",
+		basePower: 65,
+		category: "Special",
+		flags: {protect: 1, mirror: 1},
+		boosts: {},
+		secondary: {
+			chance: 20,
+			status: 'psn',
+		},
+		type: "Fire",
+	},
+	softboiled: { // now more "egg lay" than ever, learned by birds, ducks, eggy, and the pink blobs that already could get it
 		inherit: true,
 		desc: "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
 		heal: null,
@@ -1102,39 +1310,99 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			}
 			this.heal(Math.floor(target.maxhp / 2), target, target);
 		},
+		type: "Flying",
 	},
-	solarbeam: {
+	solarbeam: { // now a single turn move in line with fire blast
 		inherit: true,
-		desc: "This attack charges on the first turn and executes on the second.",
-		shortDesc: "Charges turn 1. Hits turn 2.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+		accuracy: 85,
+		pp: 5,
+		onTryMove(attacker, defender, move) {},
 	},
-	sonicboom: {
+	sonicboom: {//now a regular electric move, Shockwave's cousin.
 		inherit: true,
-		desc: "Deals 20 HP of damage to the target. This move ignores type immunity.",
+		desc: "Has a 33% chance to lower the target's Special by 1 stage.",
+		shortDesc: "33% chance to lower the target's Special by 1.",
+		accuracy: 100,
+		basePower: 65,
+		damage: null,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1,},
+		type: "Electric",
+		category: "Special",
 	},
-	spikecannon: {
+	spikecannon: {//icicle spear clone
 		inherit: true,
 		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		accuracy: 95,
+		basePower: 25,
+		category: "Special",
+		pp: 20,
+		type: "Ice",
+	},
+	splash: {// what if gyarados had actual flying stab?
+		inherit: true,
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+		accuracy: 100,
+		basePower: 100,
+		pp: 10,
+		category: "Physical",
+		onTryHit(target, source) {},
+		target: "any",
+		type: "Flying",
+	},
+	spore: {
+		inherit: true,
+		pp: 10,
+		type: "Bug",
 	},
 	stomp: {
 		inherit: true,
 		desc: "Has a 30% chance to flinch the target.",
 	},
-	struggle: {
+	strength: {// now rock type because I say so
+		inherit: true,
+		basePower: 70,
+		pp: 20,
+		type: "Rock",
+	},
+	stringshot: {//now a weak attack in line with bubble
+		inherit: true,
+		desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "33% chance to lower the target's Speed by 1.",
+		accuracy: 100,
+		basePower: 20,
+		category: "Physical",
+		boosts: {},
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 33,
+			boosts: {
+				spe: -1,
+			},
+			target: "normal",
+	},
+	struggle: {//made bird type so is true neutral
 		inherit: true,
 		desc: "Deals Normal-type damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
 		shortDesc: "User loses 1/2 the HP lost by the target.",
 		pp: 10,
 		recoil: [1, 2],
 		onModifyMove() {},
+		type: "Bird",
 	},
 	stunspore: {
 		inherit: true,
+		accuracy: 90,
+		pp: 20,
 		desc: "Paralyzes the target.",
 	},
-	submission: {
+	submission: {//no longer garbage
 		inherit: true,
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+		accuracy: 100,
+		pp: 25,
 	},
 	substitute: {
 		num: 164,
@@ -1237,34 +1505,79 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		desc: "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP. This move ignores type immunity.",
 		shortDesc: "Damage = 1/2 target's current HP. Hits Ghosts.",
 		ignoreImmunity: true,
+		accuracy: 100,
 		basePower: 1,
+	},
+	supersonic: { // better accuracy in relation with confuseray no longer confuseray
+		inherit: true,
+		accuracy: 80,
+	},
+	surf: {
+		inherit: true,
 	},
 	swift: {
 		inherit: true,
-		desc: "This move does not check accuracy and hits even if the target is using Dig or Fly.",
-		shortDesc: "Never misses, even against Dig and Fly.",
+		desc: "This move does not check accuracy and hits even if the target is using Dig, Fly, or Withdraw.",
+		shortDesc: "Never misses, even against Dig, Fly, and Withdraw.",
+	},
+	swordsdance: {
+		inherit: true,
+		pp: 10,
+	},
+	tackle: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 40,
+	},
+	tailwhip: {
+		inherit: true,
+		pp: 35,
 	},
 	takedown: {
 		inherit: true,
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+		accuracy: 100,
+		pp: 15,
+	},
+	teleport: {
+		inherit: true,
 	},
 	thrash: {
 		inherit: true,
 		desc: "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
 		shortDesc: "Lasts 3-4 turns. Confuses the user afterwards.",
+		onMoveFail() {},
+		basePower: 95,
 	},
 	thunder: {
 		inherit: true,
 		desc: "Has a 10% chance to paralyze the target.",
 		shortDesc: "10% chance to paralyze the target.",
+		accuracy: 85,
+		pp: 5,
 		secondary: {
 			chance: 10,
 			status: 'par',
 		},
 	},
-	thunderwave: {
+	thunderbolt: {
 		inherit: true,
-		accuracy: 100,
+	},
+	thunderpunch: {
+		inherit: true,
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% chance to paralyze the target.",
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+	},
+	thundershock: {
+		inherit: true,
+	},
+	thunderwave: {//use glare or stun spore if you want more reliability
+		inherit: true,
+		accuracy: 80,
 		onTryHit(target) {
 			if (target.hasType('Ground')) {
 				this.add('-immune', target);
@@ -1272,28 +1585,59 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			}
 		},
 	},
+	toxic: {//now a strong poison move, similar to gunkshot
+		inherit: true,
+		desc: "Has a 20% chance to poison the target.",
+		shortDesc: "20% chance to poison the target.",
+		ignoreImmunity: false,
+		basePower: 120,
+		category: "Physical",
+		pp: 5,
+		condition: {},
+		flags: {protect: 1, mirror: 1},
+		status: null,
+		secondary: {
+			chance: 20,
+			status: 'psn',
+		},
+	},
 	transform: {
 		inherit: true,
 		desc: "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move can hit a target using Dig or Fly.",
+		pp: 40,
 	},
 	triattack: {
 		inherit: true,
 		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
+		basePower: 100,
+		pp: 15,
 		onHit() {},
 		secondary: null,
 	},
-	twineedle: {
+	twineedle: {//now a bonemerang clone
 		inherit: true,
 		desc: "Hits twice, with the second hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, the move ends.",
+		accuracy: 95,
+		basePower: 50,
+		pp: 15,
 	},
-	whirlwind: {
+	whirlwind: {//Now a regular dragon move
 		inherit: true,
-		accuracy: 85,
-		desc: "No competitive use.",
-		shortDesc: "No competitive use.",
+		desc: "Has a 33% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "33% chance to lower the target's Defense by 1.",
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
 		forceSwitch: false,
 		onTryHit() {},
+		secondary: {
+			chance: 33,
+			boosts: {
+				def: -1,
+			},
+		},
+		type: "Dragon",
 		priority: 0,
 	},
 	wingattack: {
