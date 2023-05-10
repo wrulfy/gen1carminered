@@ -1392,7 +1392,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			boosts: {
 				spe: -1,
 			},
-			target: "normal",
+		},	
+		target: "normal",
 	},
 	struggle: {//made bird type so is true neutral
 		inherit: true,
