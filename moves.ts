@@ -65,7 +65,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	bide: {
 		inherit: true,
-		desc: "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. This move ignores type immunity and cannot be avoided even if the target is using Dig or Fly. The user can choose to switch out during the effect. If the user switches out or is prevented from moving during this move's use, the effect ends. During the effect, if the opposing Pokemon switches out or uses Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform, the previous damage dealt to the user will be added to the total.",
+		desc: "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. This move ignores type immunity and cannot be avoided even if the target is using Dig, Fly, or Withdraw. The user can choose to switch out during the effect. If the user switches out or is prevented from moving during this move's use, the effect ends. During the effect, if the opposing Pokemon switches out or uses Conversion, Glare, Leech Seed, Light Screen, Mimic, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, or Transform, the previous damage dealt to the user will be added to the total.",
 		priority: 0,
 		accuracy: true,
 		ignoreEvasion: true,
@@ -284,7 +284,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		shortDesc: "33% chance to lower the target's Speed by 1.",
 		basePower: 90,
 		pp: 15,
-		
 		secondary: {
 			chance: 33,
 			boosts: {
@@ -307,7 +306,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	counter: {
 		inherit: true,
-		desc: "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
+		desc: "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Conversion, Glare, Leech Seed, Light Screen, Mimic, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, or Transform.",
+		shortDesc: "If hit by Normal/Fighting move, deals 2x damage.",
 		ignoreImmunity: true,
 		willCrit: false,
 		damageCallback(pokemon, target) {
@@ -364,7 +364,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	dig: { // low power like in gen 2-3 but more PP because is a normal gameplay move
 		inherit: true,
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Fly.",
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Jump Kick, Razor Wind, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move, Fly, or Withdraw.",
 		basePower: 60,
 		pp: 20,
 		condition: {
@@ -387,7 +387,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	disable: { // usable accuracy but not perfect
 		inherit: true,
-		desc: "For 0 to 7 turns, one of the target's known moves that has at least 1 PP remaining becomes disabled, at random. Fails if one of the target's moves is already disabled, or if none of the target's moves have PP remaining. If any Pokemon uses Haze, this effect ends. Whether or not this move was successful, it counts as a hit for the purposes of the opponent's use of Rage.",
+		desc: "For 0 to 7 turns, one of the target's known moves that has at least 1 PP remaining becomes disabled, at random. Fails if one of the target's moves is already disabled, or if none of the target's moves have PP remaining. Whether or not this move was successful, it counts as a hit for the purposes of the opponent's use of Rage.",
 		shortDesc: "For 0-7 turns, disables one of the target's moves.",
 		accuracy: 90,
 		condition: {
@@ -465,13 +465,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		damage: null,
 		basePower: 100,
 		category: "Physical",
-
-
 	},
-
 	dreameater: {//regular draining move, does not require sleep, totally not a thpp ripoff
 		inherit: true,
-		desc: "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not recover any HP.",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
+		shortDesc: "User recovers 50% of the damage dealt.",
 		basePower: 70,
 		category: "Special",
 		onTryImmunity(target) {}, //hope doing this overrides tring to test for sleep
@@ -550,7 +548,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	fly: {
 		inherit: true,
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Dig.",
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Jump Kick, Razor Wind, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move, Dig, or Withdraw.",
 		accuracy: 100,
 		basePower: 85,
 		condition: {
@@ -573,8 +571,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	focusenergy: { // now just a +1 speed
 		inherit: true,
-		desc: "While the user remains active, its chance for a critical hit is quartered. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
-		shortDesc: "Quarters the user's chance for a critical hit.",
+		desc: "Raises the user's Speed by 1 stage.",
+		shortDesc: "Raises the user's Speed by 1.",
 		pp: 20,
 		volatileStatus: null,
 		condition: {},
@@ -661,7 +659,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	headbutt: { 
 		inherit: true,
 	},
-	highjumpkick: {//maybe in the future I'll make crash moves work in the hack, until then it remains as recoil move
+	highjumpkick: {//maybe in the future I'll make crash moves work like other gen in the hack, until then it remains as recoil move
 		inherit: true,
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
 		shortDesc: "Has 1/4 recoil.",
@@ -703,6 +701,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	icepunch: { //yes that's JP blizzard's 30% freeze chance effect
 		inherit: true,
+		desc: "Has a 30% chance to freeze the target.",
+		shortDesc: "30% chance to freeze the target.",
 		secondary: {
 			chance: 30,
 			status: 'frz',
@@ -742,13 +742,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	leechlife: {
 		inherit: true,
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
 		basePower: 60,
 		pp: 20,
 		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
 	},
 	leechseed: {
 		inherit: true,
-		desc: "At the end of each of the target's turns, The Pokemon at the user's position steals 1/16 of the target's maximum HP, rounded down and multiplied by the target's current Toxic counter if it has one, even if the target currently has less than that amount of HP remaining. If the target switches out or any Pokemon uses Haze, this effect ends. Grass-type Pokemon are immune to this move.",
+		desc: "At the end of each of the target's turns, The Pokemon at the user's position steals 1/16 of the target's maximum HP, rounded down and multiplied by the target's current Toxic counter if it has one, even if the target currently has less than that amount of HP remaining. If the target switches out, this effect ends. Grass-type Pokemon are immune to this move.",
+		shortDesc: "1/16 of target's HP is restored to user every turn.",
 		onHit() {},
 		condition: {
 			onStart(target) {
@@ -780,6 +782,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	leer: { // now lowers special instead of tail whip clone
 		inherit: true,
+		desc: "Lowers the target's Special by 1 stage.",
+		shortDesc: "Lowers the target's Special by 1.",
 		boosts: {
 			spa: -1,
 			spd: -1,
@@ -787,6 +791,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	lick: {// basic ghost move, now not as weak but paralyzes less
 		inherit: true,
+		desc: "Has a 10% chance to paralyze the target.",
+		shortDesc: "10% chance to paralyze the target.",
 		basePower: 40,
 		category: "Special",
 		secondary: {
@@ -799,7 +805,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "While the user remains active, its Special is doubled when taking damage. Critical hits ignore this effect. If any Pokemon uses Haze, this effect ends.",
+		desc: "While the user remains active, its Special is doubled when taking damage. Critical hits ignore this effect.",
 		shortDesc: "While active, user's Special is 2x when damaged.",
 		name: "Light Screen",
 		pp: 30,
@@ -826,6 +832,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	lowkick: {
 		inherit: true,
+		desc: "Has a 10% chance to make the target flinch.",
+		shortDesc: "10% chance to make the target flinch.",
 		accuracy: 100,
 		basePower: 40,
 		basePowerCallback() {
@@ -844,6 +852,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	megadrain: {
 		inherit: true,
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
 		basePower: 80,
 	},
 	megakick: {
@@ -1011,6 +1020,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	psywave: {
 		inherit: true,
+		desc: "Has a 10% chance to confuse the target.",
+		shortDesc: "10% chance to confuse the target.",
 		basePower: 120,
 		accuracy: 85,
 		damageCallback(pokemon) {},
@@ -1089,7 +1100,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection. This effect can be removed by Haze.",
+		desc: "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection.",
 		shortDesc: "While active, the user's Defense is doubled.",
 		name: "Reflect",
 		pp: 20,
@@ -1112,7 +1123,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	rest: {
 		inherit: true,
-		desc: "The user falls asleep for the next two turns and restores all of its HP, curing itself of any major status condition in the process. This does not remove the user's stat penalty for burn or paralysis. Fails if the user has full HP.",
+		desc: "The user falls asleep for the next two turns and restores all of its HP, curing itself of any major status condition in the process. This does not remove the user's stat penalty for burn or paralysis. Fails if the user has full HP or if (user's maximum HP - user's current HP + 1) is divisible by 256.",
 		onTryMove() {},
 		onHit(target, source, move) {
 			if (target.hp === target.maxhp) return false;
@@ -1210,7 +1221,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	selfdestruct: {
 		inherit: true,
-		desc: "The user faints after using this move, unless the target's substitute was broken by the damage. The target's Defense is halved during damage calculation.",
+		desc: "The user faints after using this move, unless this move broke the target's substitute. The target's Defense is halved during damage calculation.",
 		basePower: 140,
 		target: "normal",
 	},
@@ -1385,7 +1396,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	struggle: {//made bird type so is true neutral
 		inherit: true,
-		desc: "Deals Normal-type damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
+		desc: "Deals typeless damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
 		shortDesc: "User loses 1/2 the HP lost by the target.",
 		pp: 10,
 		recoil: [1, 2],
@@ -1603,7 +1614,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	transform: {
 		inherit: true,
-		desc: "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move can hit a target using Dig or Fly.",
+		desc: "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move can hit a target using Dig, Fly, or Withdraw.",
 		pp: 40,
 	},
 	triattack: {
@@ -1621,6 +1632,30 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 95,
 		basePower: 50,
 		pp: 15,
+	},
+	visegrip: { 
+		inherit: true,
+		name: "Vice Grip",
+		pp: 25,
+		type: "Bug",
+	},
+	vinewhip: {
+		inherit: true,
+		basePower: 40,
+		pp: 30,
+	},
+	watergun: { 
+		inherit: true,
+		pp: 30,
+	},
+	waterfall: {
+		inherit: true,
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
 	},
 	whirlwind: {//Now a regular dragon move
 		inherit: true,
@@ -1642,7 +1677,32 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	wingattack: {
 		inherit: true,
-		basePower: 35,
+		basePower: 55,
+		pp: 25,
+
+	},
+	withdraw: {//now a dive clone. yes it is banned because it works 1:1 like dig/fly, but I gotta make sure it works as intended
+		inherit: true,
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Jump Kick, Razor Wind, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move, Dig, or Fly.",
+		shortDesc: "Hides in shell turn 1, strikes turn 2.",
+		accuracy: 100,
+		basePower: 85,
+		category: "Special",
+		pp: 15,
+		condition: {},
+		boosts: {},
+		target: "normal",
+		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile('twoturnmove')) {
+				attacker.removeVolatile('invulnerability');
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			attacker.addVolatile('twoturnmove', defender);
+			attacker.addVolatile('invulnerability', defender);
+			return null;
+		},
 	},
 	wrap: {
 		inherit: true,
