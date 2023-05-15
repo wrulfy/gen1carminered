@@ -27,32 +27,32 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Water: 0,
 		},
 	},
-	Bug: {	
+	Bug: {//doing some task from the dark type as well
 		damageTaken: {
 			Bird: 0,
 			Bug: 0,
 			Dragon: 0,
 			Electric: 0,
-			Fighting: 2,
+			Fighting: 1,
 			Fire: 1,
 			Flying: 1,
-			Ghost: 0,
+			Ghost: 2,
 			Grass: 2,
 			Ground: 2,
 			Ice: 0,
 			Normal: 0,
 			Poison: 0,
-			Psychic: 0,
+			Psychic: 2,
 			Rock: 1,
 			Water: 0,
 		},
 	},
-	Dragon: {
+	Dragon: {//slight more neutral
 		damageTaken: {
 			Bird: 0,
 			Bug: 0,
 			Dragon: 1,
-			Electric: 2,
+			Electric: 0,
 			Fighting: 0,
 			Fire: 2,
 			Flying: 0,
@@ -127,7 +127,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Water: 1,
 		},
 	},
-	Flying: {
+	Flying: {//plants and birds now neutral to eachother
 		damageTaken: {
 			Bird: 0,
 			Bug: 2,
@@ -137,7 +137,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Fire: 0,
 			Flying: 0,
 			Ghost: 0,
-			Grass: 2,
+			Grass: 0,
 			Ground: 3,
 			Ice: 1,
 			Normal: 0,
@@ -150,7 +150,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 	Ghost: {
 		damageTaken: {
 			Bird: 0,
-			Bug: 2,
+			Bug: 1,
 			Dragon: 0,
 			Electric: 0,
 			Fighting: 3,
@@ -167,7 +167,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Water: 0,
 		},
 	},
-	Grass: {
+	Grass: {//now less bad
 		damageTaken: {
 			Bird: 0,
 			Bug: 1,
@@ -175,7 +175,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Electric: 2,
 			Fighting: 0,
 			Fire: 1,
-			Flying: 1,
+			Flying: 0,
 			Ghost: 0,
 			Grass: 2,
 			Ground: 2,
@@ -183,7 +183,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Normal: 0,
 			Poison: 1,
 			Psychic: 0,
-			Rock: 0,
+			Rock: 2,
 			Water: 2,
 		},
 	},
@@ -207,7 +207,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Water: 1,
 		},
 	},
-	Ice: {
+	Ice: {//now it has actual resistances
 		damageTaken: {
 			Bird: 0,
 			Bug: 0,
@@ -218,13 +218,13 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Flying: 0,
 			Ghost: 0,
 			Grass: 0,
-			Ground: 0,
+			Ground: 2,
 			Ice: 2,
 			Normal: 0,
 			Poison: 0,
 			Psychic: 0,
 			Rock: 1,
-			Water: 0,
+			Water: 2,
 		},
 	},
 	Normal: {
@@ -253,7 +253,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Bug: 2,
 			Dragon: 0,
 			Electric: 0,
-			Fighting: 2,
+			Fighting: 0,
 			Fire: 0,
 			Flying: 0,
 			Ghost: 0,
@@ -288,10 +288,10 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 		},
 	},
 	Rock: {
-		damageTaken: {
+		damageTaken: {// some steel duties, a bit better defensively but not as good offensively
 			Bird: 0,
 			Bug: 0,
-			Dragon: 0,
+			Dragon: 2,
 			Electric: 0,
 			Fighting: 1,
 			Fire: 2,
@@ -321,7 +321,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Ground: 0,
 			Ice: 2,
 			Normal: 0,
-			Poison: 0,
+			Poison: 1,
 			Psychic: 0,
 			Rock: 0,
 			Water: 2,

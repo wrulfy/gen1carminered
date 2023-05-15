@@ -1,3 +1,20 @@
+/**
+ * A lack of move relearner leads to a small pool of illegal move combinations
+ * Basically, like in regular RBY, eggy can't use stomp and powders at the same time
+ * The best example would be cloyster with pin missile and barrier. those two together are fine because you can catch a lv35 cloyster that will know both moves
+ * however, pin missile plus barrier plus supersonic would be illegal, because from the inital moves of cloyster, pin missile would overwrite supersonic, then spike cannon overwrites auroa beam.
+ * big issue is, all 4 initial moves are labeled as lv1 moves. the simulator doesn't know which one goes first.
+ * that's why I made all inital moves being learned at lv1, 2, 3, and 4, so the simulator can correctly calculate which move would get overwriten by, and rule out any possible illegal combos, even if of not good moves.
+ * no pokemon avaiable at low levels has enough initial moves to cause a scenario that wouldn't match the game.
+ * also, the only case where a pokemon naturally learns a move at a low level enough to clash with this is the two worms, which only have 1 inital move anyway, so doesn't clash out.
+ * the only exception to all of this is ninetales, that due to vulpix being avaiable at lv3, and being able to evolve via stone, you could have a lv3 ninetales, which would then learn the third inital move upon evolving, and the 4th initial move at lv4.
+ * so ninetales learns the 3 initial moves at lv1 and the 4th move at lv2.
+ * Luckily, this doesn't yield any issues, because the lowest level avaiable wild ninetales is lv32, at a point where the 3 first inital moves are replaced by regular lv up moves, so the simulator would then see that the 3 first moves would be no aviable, but the 4th one do, because is learned at lv2.
+ * At the very least, there's not many cases of stuff like eggy's stomp in this format, and most of these kind of moves that stone evos get are TMs, so you don't miss any compatibility.
+ * 
+ *I just really want this to be accurate to the romhack is based on.
+ */
+
 export const Learnsets: {[k: string]: ModdedLearnsetData} = { 
 	bulbasaur: {
 		learnset: {
@@ -31,6 +48,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			vinewhip: ["1L10"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	ivysaur: {
 		learnset: {
@@ -132,6 +152,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	charmeleon: {
 		learnset: {
@@ -248,6 +271,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			watergun: ["1L13"],
 			withdraw: ["1L22"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	wartortle: {
 		learnset: {
@@ -332,6 +358,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			stringshot: ["1L4"],
 			tackle: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
+
 	},
 	metapod: {
 		learnset: {
@@ -341,6 +371,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			stringshot: ["1L1"],
 			tackle: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 6},
+		],
 	},
 	butterfree: {
 		learnset: {
@@ -386,6 +419,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisonsting: ["1L1"],
 			stringshot: ["1L4"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
 	},
 	kakuna: {
 		learnset: {
@@ -395,6 +431,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisonsting: ["1L1"],
 			stringshot: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 6},
+		],
 	},
 	beedrill: {
 		learnset: {
@@ -461,6 +500,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlwind: ["1M", "1L19"],
 			wingattack: ["1L22"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
 	},
 	pidgeotto: {
 		learnset: {
@@ -547,6 +589,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
 	},
 	raticate: {
 		learnset: {
@@ -612,6 +657,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	fearow: {
 		learnset: {
@@ -672,6 +720,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlwind: ["1M"],
 			wrap: ["1L8"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	arbok: {
 		learnset: {
@@ -739,6 +790,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thundershock: ["1L1"],
 			thunderwave: ["1M", "1L16"],
 		},
+		encounters: [
+			{generation: 1, level: 4},
+		],
 	},
 	raichu: {
 		learnset: {
@@ -807,6 +861,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			vicegrip: ["1L23"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	sandslash: {
 		learnset: {
@@ -873,6 +930,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
 	},
 	nidorina: {
 		learnset: {
@@ -985,6 +1045,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 2},
+		],
 	},
 	nidorino: {
 		learnset: {
@@ -1109,6 +1172,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderwave: ["1M"],
 			wingattack: ["1L21"],
 		},
+		encounters: [
+			{generation: 1, level: 7},
+		],
 	},
 	clefable: {
 		learnset: {
@@ -1186,6 +1252,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	ninetales: {
 		learnset: {
@@ -1263,6 +1332,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 6},
+		],
 	},
 	wigglytuff: {
 		learnset: {
@@ -1336,6 +1408,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlwind: ["1M"],
 			wingattack: ["1L18"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	golbat: {
 		learnset: {
@@ -1396,6 +1471,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	gloom: {
 		learnset: {
@@ -1493,6 +1571,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	parasect: {
 		learnset: {
@@ -1563,6 +1644,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	venomoth: {
 		learnset: {
@@ -1628,6 +1712,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 9},
+		],
 	},
 	dugtrio: {
 		learnset: {
@@ -1691,6 +1778,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 11},
+		],
 	},
 	persian: {
 		learnset: {
@@ -1769,6 +1859,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			watergun: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	golduck: {
 		learnset: {
@@ -1843,6 +1936,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	primeape: {
 		learnset: {
@@ -1910,6 +2006,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 14},
+		],
 	},
 	arcanine: {
 		learnset: {
@@ -1966,6 +2065,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			watergun: ["1L12"],
 		},
+		encounters: [
+			{generation: 1, level: 4},
+		],
 	},
 	poliwhirl: {
 		learnset: {
@@ -2070,6 +2172,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M", "1L1"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 10},
+		],
 	},
 	kadabra: {
 		learnset: {
@@ -2173,6 +2278,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 10},
+		],
 	},
 	machoke: {
 		learnset: {
@@ -2265,6 +2373,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			vinewhip: ["1L11"],
 			wrap: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	weepinbell: {
 		learnset: {
@@ -2357,6 +2468,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			watergun: ["1L12"],
 			wrap: ["1L1"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	tentacruel: {
 		learnset: {
@@ -2419,6 +2533,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			tackle: ["1L1"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	graveler: {
 		learnset: {
@@ -2512,6 +2629,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			tailwhip: ["1L1"],
 			takedown: ["1M", "1L36"],
 		},
+		encounters: [
+			{generation: 1, level: 18},
+		],
 	},
 	rapidash: {
 		learnset: {
@@ -2584,6 +2704,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderwave: ["1M"],
 			watergun: ["1L14"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	slowbro: {
 		learnset: {
@@ -2659,6 +2782,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thundershock: ["1L1"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	magneton: {
 		learnset: {
@@ -2733,6 +2859,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlwind: ["1M"],
 			wingattack: ["1L22"],
 		},
+		encounters: [
+			{generation: 1, level: 13},
+		],
 	},
 	doduo: {
 		learnset: {
@@ -2763,6 +2892,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thrash: ["1L30"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 14},
+		],
 	},
 	dodrio: {
 		learnset: {
@@ -2824,6 +2956,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 15},
+		],
 	},
 	dewgong: {
 		learnset: {
@@ -2888,6 +3023,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 16},
+		],
 	},
 	muk: {
 		learnset: {
@@ -2953,6 +3091,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			watergun: ["1L1"],
 			withdraw: ["1L20"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	cloyster: {
 		learnset: {
