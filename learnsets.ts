@@ -26,7 +26,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			flash: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			growth: ["1M"],
 			headbutt: ["1L16"],
 			leechseed: ["1L7"],
@@ -40,10 +40,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			sludge: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			vinewhip: ["1L10"],
 			whirlwind: ["1M"],
@@ -64,30 +64,30 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			flash: ["1M"],
 			growth: ["1M", "1L28"],
-			headbutt: ["1L1"],
-			leechseed: ["1L1"],
+			headbutt: ["1L4"], // Fourth inital move
+			leechseed: ["1L3"], // Third inital move
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonpowder: ["1L1"],
+			poisonpowder: ["1L1"], // First inital move
 			razorleaf: ["1L24"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			sludge: ["1M", "1L36"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			thrash: ["1L32"],
-			vinewhip: ["1L1"],
+			vinewhip: ["1L2"], // Second inital move
 			whirlwind: ["1M"],
 		},
 	},
 	venusaur: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L1"], // First inital move
 			bide: ["1M"],
 			bind: ["1L42"],
 			bodyslam: ["1M"],
@@ -97,23 +97,23 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			earthquake: ["1M", "1L52"],
 			flash: ["1M"],
-			growth: ["1M", "1L1"],
+			growth: ["1M", "1L3"], // Third inital move
 			hyperbeam: ["1M"],
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			razorleaf: ["1L1"],
+			razorleaf: ["1L2"], // Second inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			sleeppowder: ["1L47"],
 			sludge: ["1M", "1L37"],
 			solarbeam: ["1M", "1L62"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
-			thrash: ["1L1"],
+			thrash: ["1L4"], // Fourth inital move
 			toxic: ["1L57"],
 			whirlwind: ["1M"],
 		},
@@ -131,7 +131,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			ember: ["1L10"],
 			firepunch: ["1L22"],
 			flamethrower: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			guillotine: ["1M"],
 			leer: ["1L13"],
 			megapunch: ["1M"],
@@ -141,21 +141,21 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rage: ["1L7"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L1"], // First inital move
 			seismictoss: ["1M"],
 			smokescreen: ["1M"],
 			stomp: ["1L16"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 		},
-		encounters: [
-			{generation: 1, level: 5},
-		],
-	},
+	},	
+	encounters: [
+		{generation: 1, level: 5},
+	],
 	charmeleon: {
 		learnset: {
 			bide: ["1M"],
@@ -166,17 +166,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
-			ember: ["1L1"],
+			ember: ["1L2"], // Second inital move
 			firepunch: ["1L24"],
 			firespin: ["1L40"],
 			flamethrower: ["1M"],
 			guillotine: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L3"], // Third inital move
 			megapunch: ["1M"],
 			mimic: ["1M"],
 			peck: ["1L20"],
 			poisongas: ["1M"],
-			rage: ["1L1"],
+			rage: ["1L1"], // First inital move
 			razorwind: ["1M", "1L36"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -184,8 +184,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sharpen: ["1L28"],
 			slash: ["1L32"],
 			smokescreen: ["1M"],
-			stomp: ["1L1"],
-			strengh: ["1M"],
+			stomp: ["1L4"], // Fourth inital move
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -206,7 +206,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dragonrage: ["1M", "1L52"],
 			earthquake: ["1M"],
 			fireblast: ["1L62"],
-			firepunch: ["1L1"],
+			firepunch: ["1L2"], // Second inital move
 			firespin: ["1L42"],
 			fissure: ["1M"],
 			flamethrower: ["1M"],
@@ -215,18 +215,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			megapunch: ["1M"],
 			mimic: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L1"], // First inital move
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
-			sharpen: ["1L1"],
+			sharpen: ["1L3"], // Third inital move
 			skyattack: ["1M", "1L57"],
-			slash: ["1L1"],
+			slash: ["1L4"], // Fourth inital move
 			smokescreen: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -255,22 +255,22 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
+			pound: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			rockthrow: ["1L19"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			watergun: ["1L13"],
 			withdraw: ["1L22"],
-		},
+		},	
 		encounters: [
 			{generation: 1, level: 5},
 		],
@@ -279,13 +279,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			barrage: ["1L36"],
 			bide: ["1M", "1L28"],
-			bite: ["1L1"],
+			bite: ["1L4"], // Fourth inital move
 			bodyslam: ["1M"],
-			bubble: ["1L1"],
+			bubble: ["1L1"], // First inital move
 			bubblebeam: ["1M"],
 			clamp: ["1L40"],
 			counter: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L3"], // Third inital move
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -303,13 +303,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
 			skullbash: ["1L32"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L2"], // Second inital move
 			withdraw: ["1L24"],
 		},
 	},
@@ -317,7 +317,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			barrage: ["1L37"],
 			barrier: ["1L47"],
-			bide: ["1M", "1L1"],
+			bide: ["1M", "1L3"], // Third inital move
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			clamp: ["1L42"],
@@ -340,36 +340,35 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			reflect: ["1M"],
 			rest: ["1M"],
 			rockslide: ["1L57"],
-			rockthrow: ["1L1"],
+			rockthrow: ["1L1"], // First inital move
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
-			skullbash: ["1L1"],
-			strengh: ["1M"],
+			skullbash: ["1L4"], // Fourth inital move
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			withdraw: ["1L1"],
+			withdraw: ["1L2"], // Second inital move
 		},
 	},
 	caterpie: {
 		learnset: {
 			stringshot: ["1L4"],
-			tackle: ["1L1"],
-		},
+			tackle: ["1L1"], // First inital move
+		},	
 		encounters: [
 			{generation: 1, level: 2},
 		],
-
 	},
 	metapod: {
 		learnset: {
 			barrier: ["1L13"],
-			defensecurl: ["1L1"],
-			harden: ["1L7", "1L1"],
-			stringshot: ["1L1"],
-			tackle: ["1L1"],
+			defensecurl: ["1L1"], // First inital move
+			harden: ["1L7", "1L4"], // Fourth inital move
+			stringshot: ["1L3"], // Third inital move
+			tackle: ["1L2"], // Second inital move
 		},
 		encounters: [
 			{generation: 1, level: 6},
@@ -386,7 +385,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			fly: ["1M"],
 			growth: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hyperbeam: ["1M"],
 			leechlife: ["1L21"],
 			megadrain: ["1M"],
@@ -394,20 +393,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			poisonpowder: ["1L12"],
 			psybeam: ["1L10"],
-			psychic: ["1L32"],
-			psychicm: ["1M"],
+			psychic: ["1L32", "1M"],
 			razorwind: ["1M", "1L28"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			skyattack: ["1M"],
 			sleeppowder: ["1L18"],
 			solarbeam: ["1M"],
-			stringshot: ["1L1"],
+			stringshot: ["1L3"], // Third inital move
 			stunspore: ["1L16"],
 			substitute: ["1M"],
 			supersonic: ["1L24"],
 			swift: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			whirlwind: ["1M"],
@@ -416,7 +414,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	weedle: {
 		learnset: {
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			stringshot: ["1L4"],
 		},
 		encounters: [
@@ -426,10 +424,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	kakuna: {
 		learnset: {
 			barrier: ["1L13"],
-			defensecurl: ["1L1"],
-			harden: ["1L7", "1L1"],
-			poisonsting: ["1L1"],
-			stringshot: ["1L1"],
+			defensecurl: ["1L1"], // First inital move
+			harden: ["1L7", "1L4"], // Fourth inital move
+			poisonsting: ["1L2"], // Second inital move
+			stringshot: ["1L3"], // Third inital move
 		},
 		encounters: [
 			{generation: 1, level: 6},
@@ -448,7 +446,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			focusenergy: ["1L12"],
 			furyattack: ["1L28"],
 			guillotine: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L1"], // First inital move
 			haze: ["1L21"],
 			hornattack: ["1L10"],
 			horndrill: ["1M", "1L43"],
@@ -457,7 +455,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			pinmissile: ["1L16"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L3"], // Third inital move
 			rage: ["1L14"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
@@ -465,7 +463,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			skyattack: ["1M"],
 			sludge: ["1M", "1L37"],
 			solarbeam: ["1M"],
-			stringshot: ["1L1"],
+			stringshot: ["1L2"], // Second inital move
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -495,7 +493,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			softboiled: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			whirlwind: ["1M", "1L19"],
 			wingattack: ["1L22"],
@@ -513,16 +511,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			flamethrower: ["1M"],
 			fly: ["1M", "1L36"],
-			growl: ["1L1"],
+			growl: ["1L4"], // Fourth inital move
 			lightscreen: ["1M"],
 			mimic: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L2"], // Second inital move
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L3"], // Third inital move
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
+			sandattack: ["1L1"], // First inital move
 			skyattack: ["1M"],
 			softboiled: ["1M", "1L40"],
 			substitute: ["1M"],
@@ -534,19 +532,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	pidgeot: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L3"], // Third inital move
 			bide: ["1M"],
 			bubblebeam: ["1M"],
 			doubleedge: ["1M", "1L46"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
 			flamethrower: ["1M"],
-			fly: ["1M", "1L1"],
+			fly: ["1M", "1L4"], // Fourth inital move
+			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			lightscreen: ["1M"],
 			mimic: ["1M"],
 			mirrormove: ["1L51"],
-			mist: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
@@ -554,9 +552,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			skyattack: ["1M", "1L57"],
 			softboiled: ["1M", "1L41"],
 			substitute: ["1M"],
-			swift: ["1M", "1L1"],
+			swift: ["1M", "1L2"], // Second inital move
 			takedown: ["1M"],
-			whirlwind: ["1M", "1L1"],
+			whirlwind: ["1M", "1L1"], // First inital move
 		},
 	},
 	rattata: {
@@ -571,9 +569,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			focusenergy: ["1L12"],
-			hydropump: ["1M"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			quickattack: ["1L7"],
 			razorwind: ["1M"],
@@ -582,8 +580,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sharpen: ["1L20"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tackle: ["1L1"],
-			tailwhip: ["1L1"],
+			tackle: ["1L1"], // First inital move
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
@@ -596,7 +594,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	raticate: {
 		learnset: {
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L4"], // Fourth inital move
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			counter: ["1M"],
@@ -604,26 +602,26 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L3"], // Third inital move
 			furyswipes: ["1L37"],
 			guillotine: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			hyperfang: ["1L31"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L2"], // Second inital move
 			razorwind: ["1M"],
 			rest: ["1M"],
 			screech: ["1L26"],
 			sharpen: ["1L22"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			superfang: ["1L44"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
@@ -637,7 +635,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			fly: ["1M"],
 			furyattack: ["1L19"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			gust: ["1L6"],
 			headbutt: ["1L23"],
 			horndrill: ["1M"],
@@ -645,7 +643,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mirrormove: ["1L14"],
 			payday: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L2"], // Second inital move
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
@@ -669,15 +667,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			drillpeck: ["1L34"],
 			fly: ["1M"],
-			furyattack: ["1L1"],
+			furyattack: ["1L4"], // Fourth inital move
 			furyswipes: ["1L29"],
-			gust: ["1L1"],
+			gust: ["1L1"], // First inital move
 			headbutt: ["1L25"],
 			horndrill: ["1M"],
 			hyperbeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L2"], // Second inital move
 			mimic: ["1M"],
-			mirrormove: ["1L1"],
+			mirrormove: ["1L3"], // Third inital move
 			payday: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
@@ -710,12 +708,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			rest: ["1M"],
 			sludge: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			whirlwind: ["1M"],
 			wrap: ["1L8"],
@@ -726,7 +724,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	arbok: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L1"], // First inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			constrict: ["1M"],
@@ -737,8 +735,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			earthquake: ["1M"],
 			fissure: ["1M"],
 			flash: ["1M"],
-			glare: ["1L1"],
-			gust: ["1L1"],
+			glare: ["1L4"], // Fourth inital move
+			gust: ["1L3"], // Third inital move
 			haze: ["1L28"],
 			hyperbeam: ["1M"],
 			hyperfang: ["1L50"],
@@ -749,12 +747,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			roar: ["1L33"],
 			slam: ["1L38"],
 			sludge: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
 			toxic: ["1L44"],
 			whirlwind: ["1M"],
-			wrap: ["1L1"],
+			wrap: ["1L2"], // Second inital move
 		},
 	},
 	pikachu: {
@@ -767,7 +765,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M", "1L24"],
 			flash: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			lightscreen: ["1M", "1L39"],
 			megapunch: ["1M"],
 			mimic: ["1M"],
@@ -777,7 +775,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -787,11 +785,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			thunderbolt: ["1M", "1L35"],
 			thunderpunch: ["1L20"],
-			thundershock: ["1L1"],
+			thundershock: ["1L2"], // Second inital move
 			thunderwave: ["1M", "1L16"],
 		},
 		encounters: [
-			{generation: 1, level: 4},
+			{generation: 1, level: 6},
 		],
 	},
 	raichu: {
@@ -803,7 +801,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			flash: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			hyperbeam: ["1M"],
 			lightscreen: ["1M", "1L41"],
 			megakick: ["1L48"],
@@ -815,18 +813,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			slam: ["1L34"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunder: ["1L55"],
 			thunderbolt: ["1M"],
 			thunderpunch: ["1L27"],
-			thundershock: ["1L1"],
+			thundershock: ["1L3"], // Third inital move
 			thunderwave: ["1M", "1L13"],
 		},
 	},
@@ -850,10 +848,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisonsting: ["1L12"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
-			scratch: ["1L1"],
+			sandattack: ["1L2"], // Second inital move
+			scratch: ["1L1"], // First inital move
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M", "1L20"],
@@ -871,7 +869,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M"],
 			counter: ["1M"],
 			cut: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L1"], // First inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			earthquake: ["1M", "1L50"],
@@ -882,20 +880,20 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L2"], // Second inital move
 			razorwind: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			sharpen: ["1L38"],
 			slash: ["1L33"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
-			swift: ["1M", "1L1"],
+			swift: ["1M", "1L3"], // Third inital move
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			twineedle: ["1L44"],
-			vicegrip: ["1L1"],
+			vicegrip: ["1L4"], // Fourth inital move
 		},
 	},
 	nidoranf: {
@@ -911,7 +909,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doublekick: ["1L14"],
 			doubleteam: ["1M"],
 			furyswipes: ["1L22"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			horndrill: ["1M"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
@@ -920,11 +918,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L2"], // Second inital move
 			sludge: ["1M"],
 			smog: ["1L18"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			tailwhip: ["1L11"],
 			takedown: ["1M"],
@@ -937,33 +935,33 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	nidorina: {
 		learnset: {
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L2"], // Second inital move
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			counter: ["1M"],
 			cut: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L4"], // Fourth inital move
 			doubleteam: ["1M"],
 			furyswipes: ["1L25"],
 			horndrill: ["1M"],
+			hydropump: ["1M"],
 			hyperfang: ["1L34"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
-			mist: ["1M"],
 			poisongas: ["1M", "1L29"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			sludge: ["1M"],
 			smog: ["1L20"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			superfang: ["1L43"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L3"], // Third inital move
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 			toxic: ["1L38"],
@@ -972,7 +970,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	nidoqueen: {
 		learnset: {
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L2"], // Second inital move
 			bodyslam: ["1M", "1L23"],
 			bubblebeam: ["1M"],
 			confuseray: ["1M"],
@@ -980,7 +978,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			cut: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L4"], // Fourth inital move
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
 			earthquake: ["1M", "1L43"],
@@ -997,18 +995,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			sludge: ["1M", "1L33"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L3"], // Third inital move
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
@@ -1030,7 +1028,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hornattack: ["1L8"],
 			horndrill: ["1M"],
 			icebeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L1"], // First inital move
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			poisonsting: ["1L5"],
@@ -1039,9 +1037,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sludge: ["1M"],
 			smog: ["1L18"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
@@ -1058,24 +1056,24 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			cut: ["1M"],
 			dig: ["1M", "1L25"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L4"], // Fourth inital move
 			doubleteam: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L3"], // Third inital move
 			furyattack: ["1L34"],
 			guillotine: ["1M"],
-			hornattack: ["1L1"],
+			hornattack: ["1L2"], // Second inital move
 			horndrill: ["1M", "1L43"],
+			hydropump: ["1M"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
-			mist: ["1M"],
 			poisongas: ["1M", "1L29"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			sludge: ["1M"],
 			smog: ["1L20"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
@@ -1092,16 +1090,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			cut: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L4"], // Fourth inital move
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
 			earthquake: ["1M", "1L43"],
 			eggbomb: ["1M"],
 			fissure: ["1M"],
 			flamethrower: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L3"], // Third inital move
 			guillotine: ["1M", "1L53"],
-			hornattack: ["1L1"],
+			hornattack: ["1L2"], // Second inital move
 			horndrill: ["1M"],
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
@@ -1111,13 +1109,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			sludge: ["1M", "1L33"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -1142,18 +1140,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			fly: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			growth: ["1M"],
-			hydropump: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			megapunch: ["1M"],
-			metronome: ["1M", "1L1"],
+			metronome: ["1M", "1L3"], // Third inital move
 			mimic: ["1M"],
 			minimize: ["1L25"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
-			psychicm: ["1M"],
+			pound: ["1L1"], // First inital move
+			psychic: ["1M"],
 			razorwind: ["1M", "1L36"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -1162,7 +1160,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sing: ["1L13"],
 			softboiled: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -1185,35 +1183,35 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			counter: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			fly: ["1M"],
 			growth: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			lick: ["1L1"],
+			lick: ["1L1"], // First inital move
 			lightscreen: ["1M", "1L36"],
 			megapunch: ["1M"],
-			metronome: ["1M", "1L1"],
+			metronome: ["1M", "1L3"], // Third inital move
 			mimic: ["1M"],
+			mist: ["1M"],
 			nightshade: ["1L52"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			screech: ["1L20"],
 			seismictoss: ["1M"],
-			sing: ["1L1"],
+			sing: ["1L4"], // Fourth inital move
 			skyattack: ["1M"],
 			softboiled: ["1M", "1L44"],
 			solarbeam: ["1M"],
 			splash: ["1L60"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -1233,14 +1231,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
-			ember: ["1L1"],
+			ember: ["1L2"], // Second inital move
 			firespin: ["1L28"],
 			flamethrower: ["1M"],
-			hydropump: ["1M"],
 			hypnosis: ["1L37"],
-			leer: ["1L1"],
+			leer: ["1L1"], // First inital move
 			lick: ["1L10"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			psybeam: ["1L22"],
 			quickattack: ["1L16"],
@@ -1265,20 +1263,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M", "1L25"],
-			ember: ["1L1"],
+			ember: ["1L1"], // First inital move
 			firespin: ["1L18"],
 			flamethrower: ["1M", "1L46"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			hypnosis: ["1L39"],
-			lick: ["1L1"],
+			lick: ["1L1"], // Second inital move
 			mimic: ["1M"],
+			mist: ["1M"],
 			nightshade: ["1L53"],
 			poisongas: ["1M"],
-			psybeam: ["1L1"],
-			psychic: ["1L32"],
-			psychicm: ["1M"],
-			quickattack: ["1L1"],
+			psybeam: ["1L1"], // Third inital move
+			psychic: ["1L32", "1M"],
+			quickattack: ["1L2"], // Fourth inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			smokescreen: ["1M"],
@@ -1305,25 +1302,25 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			fly: ["1M"],
-			growl: ["1L1"],
-			hydropump: ["1M"],
+			growl: ["1L1"], // First inital move
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
-			psychicm: ["1M"],
+			pound: ["1L2"], // Second inital move
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M", "1L30"],
 			screech: ["1L27"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
-			sing: ["1L1"],
+			sing: ["1L3"], // Third inital move
 			smokescreen: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -1342,34 +1339,34 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M", "1L13"],
 			bubblebeam: ["1M"],
 			counter: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L2"], // Second inital move
 			dig: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L3"], // Third inital move
 			doubleedge: ["1M", "1L34"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L1"], // First inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			fly: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M", "1L20"],
 			screech: ["1L27"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M", "1L48"],
-			sing: ["1L1"],
+			sing: ["1L4"], // Fourth inital move
 			smokescreen: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			supersonic: ["1L41"],
@@ -1382,7 +1379,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	zubat: {
 		learnset: {
-			absorb: ["1L1"],
+			absorb: ["1L2"], // Second inital move
 			bide: ["1M"],
 			bite: ["1L9"],
 			confuseray: ["1M"],
@@ -1395,7 +1392,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			razorwind: ["1M"],
 			rest: ["1M"],
 			skyattack: ["1M"],
@@ -1419,10 +1416,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			fly: ["1M"],
-			haze: ["1L1"],
+			haze: ["1L2"], // Second inital move
 			hyperbeam: ["1M"],
 			hyperfang: ["1L27"],
-			leechlife: ["1L1"],
+			leechlife: ["1L4"], // Fourth inital move
 			lick: ["1L23"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
@@ -1434,18 +1431,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			smog: ["1L31"],
 			substitute: ["1M"],
 			superfang: ["1L45"],
-			supersonic: ["1L1"],
+			supersonic: ["1L1"], // First inital move
 			swift: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
 			toxic: ["1L51"],
 			whirlwind: ["1M"],
-			wingattack: ["1L1"],
+			wingattack: ["1L3"], // Third inital move
 		},
 	},
 	oddish: {
 		learnset: {
-			absorb: ["1L1"],
+			absorb: ["1L1"], // First inital move
 			acid: ["1L11"],
 			bide: ["1M"],
 			cut: ["1M"],
@@ -1460,7 +1457,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			petaldance: ["1L20"],
 			poisongas: ["1M"],
 			poisonpowder: ["1L14"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			screech: ["1L23"],
@@ -1477,7 +1474,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	gloom: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L4"], // Fourth inital move
 			bide: ["1M"],
 			cut: ["1M"],
 			doubleedge: ["1M"],
@@ -1487,10 +1484,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			growth: ["1M"],
 			megadrain: ["1M", "1L34"],
 			mimic: ["1M"],
-			petaldance: ["1L1"],
+			petaldance: ["1L3"], // Third inital move
 			poisongas: ["1M"],
-			poisonpowder: ["1L1"],
-			psychicm: ["1M"],
+			poisonpowder: ["1L1"], // First inital move
+			psychic: ["1M"],
 			recover: ["1L43"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -1498,7 +1495,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sing: ["1L30"],
 			sludge: ["1M", "1L38"],
 			solarbeam: ["1M", "1L47"],
-			stunspore: ["1L1"],
+			stunspore: ["1L2"], // Second inital move
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
@@ -1506,7 +1503,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	vileplume: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L1"], // First inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			cut: ["1M"],
@@ -1518,15 +1515,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
-			petaldance: ["1L1"],
+			petaldance: ["1L4"], // Fourth inital move
 			poisongas: ["1M"],
-			psychic: ["1L32"],
-			psychicm: ["1M"],
+			psychic: ["1L32", "1M"],
 			recover: ["1L56"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			screech: ["1L1"],
-			sing: ["1L1"],
+			screech: ["1L3"], // Third inital move
+			sing: ["1L2"], // Second inital move
 			sludge: ["1M", "1L40"],
 			smog: ["1L24"],
 			solarbeam: ["1M", "1L48"],
@@ -1558,13 +1554,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L2"], // Second inital move
 			slash: ["1L32"],
 			sleeppowder: ["1L19"],
 			sludge: ["1M"],
 			solarbeam: ["1M"],
-			stringshot: ["1L1"],
-			stunspore: ["1L1"],
+			stringshot: ["1L1"], // First inital move
+			stunspore: ["1L3"], // Third inital move
 			submission: ["1M"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
@@ -1582,7 +1578,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			constrict: ["1M", "1L41"],
 			counter: ["1M"],
 			crabhammer: ["1L55"],
-			cut: ["1M", "1L1"],
+			cut: ["1M", "1L1"], // First inital move
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -1593,7 +1589,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			growth: ["1M"],
 			guillotine: ["1M", "1L61"],
 			hyperbeam: ["1M"],
-			leechlife: ["1L1"],
+			leechlife: ["1L2"], // Second inital move
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
@@ -1601,8 +1597,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			slash: ["1L1"],
-			sleeppowder: ["1L1"],
+			slash: ["1L4"], // Fourth inital move
+			sleeppowder: ["1L3"], // Third inital move
 			sludge: ["1M"],
 			solarbeam: ["1M"],
 			spore: ["1L45"],
@@ -1619,7 +1615,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			confuseray: ["1M"],
 			confusion: ["1L11"],
 			constrict: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			flash: ["1M"],
@@ -1631,16 +1627,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			poisonpowder: ["1L15"],
 			psybeam: ["1L27"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			sludge: ["1M"],
 			solarbeam: ["1M"],
-			stringshot: ["1L1"],
+			stringshot: ["1L2"], // Second inital move
 			stunspore: ["1L24"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
@@ -1661,15 +1657,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fly: ["1M"],
 			hyperbeam: ["1M"],
 			hypnosis: ["1L34"],
-			leechlife: ["1L1"],
+			leechlife: ["1L4"], // Fourth inital move
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonpowder: ["1L1"],
-			psybeam: ["1L1"],
-			psychic: ["1L37"],
-			psychicm: ["1M"],
+			poisonpowder: ["1L1"], // First inital move
+			psybeam: ["1L3"], // Third inital move
+			psychic: ["1L37", "1M"],
 			psywave: ["1L51"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
@@ -1677,7 +1672,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			skyattack: ["1M"],
 			sludge: ["1M"],
 			solarbeam: ["1M"],
-			stunspore: ["1L1"],
+			stunspore: ["1L2"], // Second inital move
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
@@ -1697,14 +1692,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			earthquake: ["1M"],
 			fissure: ["1M"],
 			furyswipes: ["1L28"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			guillotine: ["1M"],
 			headbutt: ["1L24"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
+			sandattack: ["1L1"], // First inital move
 			scratch: ["1L10"],
 			sharpen: ["1L19"],
 			sludge: ["1M"],
@@ -1722,22 +1717,22 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			cut: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			earthquake: ["1M", "1L39"],
 			eggbomb: ["1M"],
 			fissure: ["1M", "1L49"],
 			furyswipes: ["1L30"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			guillotine: ["1M"],
-			headbutt: ["1L1"],
+			headbutt: ["1L2"], // Second inital move
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			sharpen: ["1L1"],
+			sharpen: ["1L4"], // Fourth inital move
 			slash: ["1L34"],
 			sludge: ["1M"],
 			substitute: ["1M"],
@@ -1760,15 +1755,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			furyswipes: ["1L30"],
 			guillotine: ["1M"],
-			hydropump: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L2"], // Second inital move
 			lightscreen: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			payday: ["1M", "1L25"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L1"], // First inital move
 			sharpen: ["1L16"],
 			sludge: ["1M"],
 			substitute: ["1M"],
@@ -1785,11 +1780,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	persian: {
 		learnset: {
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L1"], // First inital move
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			cut: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L2"], // Second inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
@@ -1798,18 +1793,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			furyswipes: ["1L32"],
 			guillotine: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			hypnosis: ["1L52"],
 			lightscreen: ["1M"],
 			mimic: ["1M"],
-			payday: ["1M", "1L1"],
+			mist: ["1M"],
+			payday: ["1M", "1L3"], // Third inital move
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
 			roar: ["1L43"],
 			screech: ["1L35"],
-			sharpen: ["1L1"],
+			sharpen: ["1L4"], // Fourth inital move
 			slash: ["1L39"],
 			sludge: ["1M"],
 			substitute: ["1M"],
@@ -1843,13 +1838,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			payday: ["1M"],
 			poisongas: ["1M"],
 			psybeam: ["1L35"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L1"], // First inital move
 			seismictoss: ["1M"],
 			softboiled: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -1857,7 +1852,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			tailwhip: ["1L15"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L2"], // Second inital move
 		},
 		encounters: [
 			{generation: 1, level: 5},
@@ -1867,12 +1862,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L4"], // Fourth inital move
 			confuseray: ["1M"],
-			confusion: ["1L1"],
+			confusion: ["1L2"], // Second inital move
 			counter: ["1M"],
 			dig: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			flash: ["1M"],
@@ -1889,18 +1884,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			payday: ["1M"],
 			poisongas: ["1M"],
 			psybeam: ["1L36"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
 			roar: ["1L40"],
 			seismictoss: ["1M"],
 			softboiled: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
@@ -1917,7 +1912,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			focusenergy: ["1L16"],
 			karatechop: ["1L30"],
-			leer: ["1L1"],
+			leer: ["1L2"], // Second inital move
 			lowkick: ["1L11"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
@@ -1926,10 +1921,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			scratch: ["1L1"],
+			scratch: ["1L1"], // First inital move
 			seismictoss: ["1M", "1L25"],
 			sludge: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -1945,18 +1940,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			counter: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L3"], // Third inital move
 			dizzypunch: ["1L47"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			earthquake: ["1M", "1L52"],
 			eggbomb: ["1M"],
 			fissure: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L1"], // First inital move
 			furyswipes: ["1L35"],
 			hyperbeam: ["1M"],
 			karatechop: ["1L32"],
-			lowkick: ["1L1"],
+			lowkick: ["1L2"], // Second inital move
 			meditate: ["1L43"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
@@ -1966,9 +1961,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rage: ["1L28"],
 			razorwind: ["1M"],
 			rest: ["1M"],
-			seismictoss: ["1M", "1L1"],
+			seismictoss: ["1M", "1L4"], // Fourth inital move
 			sludge: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -1981,15 +1976,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			agility: ["1L37"],
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L1"], // First inital move
 			bodyslam: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
-			ember: ["1L1"],
+			ember: ["1L3"], // Third inital move
 			flamethrower: ["1M", "1L42"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			gust: ["1L17"],
 			leer: ["1L21"],
 			mimic: ["1M"],
@@ -1998,7 +1993,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			slam: ["1L33"],
 			smokescreen: ["1M", "1L25"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -2018,20 +2013,20 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M", "1L51"],
-			ember: ["1L1"],
+			ember: ["1L2"], // Second inital move
 			fireblast: ["1L60"],
 			flamethrower: ["1M"],
-			growl: ["1L1"],
-			gust: ["1L1"],
+			growl: ["1L1"], // First inital move
+			gust: ["1L3"], // Third inital move
 			hyperbeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L4"], // Fourth inital move
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			smokescreen: ["1M", "1L33"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -2045,7 +2040,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			amnesia: ["1L27"],
 			bide: ["1M"],
 			bodyslam: ["1M", "1L24"],
-			bubble: ["1L1"],
+			bubble: ["1L1"], // First inital move
 			bubblebeam: ["1M", "1L20"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
@@ -2057,7 +2052,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			rest: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -2074,18 +2069,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			amnesia: ["1L30"],
 			bide: ["1M"],
 			bodyslam: ["1M", "1L26"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L4"], // Fourth inital move
 			cometpunch: ["1L39"],
 			counter: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doublekick: ["1L23"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
 			earthquake: ["1M"],
 			fissure: ["1M"],
 			hydropump: ["1M"],
-			hypnosis: ["1L1"],
+			hypnosis: ["1L3"], // Third inital move
 			icebeam: ["1M"],
 			icepunch: ["1L36"],
 			meditate: ["1L42"],
@@ -2094,31 +2089,31 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
 			waterfall: ["1L33"],
-			watergun: ["1L1"],
+			watergun: ["1L1"], // First inital move
 		},
 	},
 	poliwrath: {
 		learnset: {
-			amnesia: ["1L1"],
+			amnesia: ["1L3"], // Third inital move
 			bide: ["1M"],
-			bodyslam: ["1M", "1L1"],
-			bubblebeam: ["1M", "1L1"],
+			bodyslam: ["1M", "1L4"], // Fourth inital move
+			bubblebeam: ["1M", "1L1"], // First inital move
 			cometpunch: ["1L37"],
 			counter: ["1M"],
 			dig: ["1M"],
 			dizzypunch: ["1L58"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
 			earthquake: ["1M"],
 			eggbomb: ["1M"],
@@ -2132,10 +2127,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -2160,7 +2155,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			pound: ["1L12"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
@@ -2169,7 +2164,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
-			teleport: ["1M", "1L1"],
+			teleport: ["1M", "1L1"], // First inital move
 			thunderwave: ["1M"],
 		},
 		encounters: [
@@ -2195,9 +2190,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
+			pound: ["1L2"], // Second inital move
 			psybeam: ["1L28"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			recover: ["1L36"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -2208,7 +2203,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
-			teleport: ["1M", "1L1"],
+			teleport: ["1M", "1L1"], // First inital move
 			thunderwave: ["1M"],
 		},
 	},
@@ -2218,9 +2213,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M"],
 			counter: ["1M"],
 			dig: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L3"], // Third inital move
 			doubleedge: ["1M"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L1"], // First inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flash: ["1M"],
@@ -2231,16 +2226,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			psybeam: ["1L1"],
-			psychic: ["1L42"],
-			psychicm: ["1M"],
+			psybeam: ["1L2"], // Second inital move
+			psychic: ["1L42", "1M"],
 			psywave: ["1L57"],
 			recover: ["1L37"],
 			reflect: ["1M", "1L52"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			solarbeam: ["1M"],
-			sonicboom: ["1L1"],
+			sonicboom: ["1L4"], // Fourth inital move
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -2264,8 +2258,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			focusenergy: ["1L23"],
 			lightscreen: ["1M"],
-			lowkick: ["1L1"],
-			meditate: ["1L1"],
+			lowkick: ["1L1"], // First inital move
+			meditate: ["1L2"], // Second inital move
 			megapunch: ["1M", "1L20"],
 			metronome: ["1M"],
 			mimic: ["1M"],
@@ -2273,7 +2267,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			rollingkick: ["1L17"],
 			seismictoss: ["1M", "1L14"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M", "1L26"],
 			substitute: ["1M"],
 			takedown: ["1M"],
@@ -2295,18 +2289,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L4"], // Fourth inital move
 			karatechop: ["1L39"],
 			lightscreen: ["1M"],
-			megapunch: ["1M", "1L1"],
+			megapunch: ["1M", "1L3"], // Third inital move
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M"],
-			rollingkick: ["1L1"],
-			seismictoss: ["1M", "1L1"],
+			rollingkick: ["1L2"], // Second inital move
+			seismictoss: ["1M", "1L1"], // First inital move
 			slam: ["1L31"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M", "1L27"],
 			substitute: ["1M"],
 			takedown: ["1M"],
@@ -2316,7 +2310,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			counter: ["1M", "1L1"],
+			counter: ["1M", "1L4"], // Fourth inital move
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -2325,7 +2319,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L1"], // First inital move
 			hijumpkick: ["1L57"],
 			hyperbeam: ["1M"],
 			karatechop: ["1L42"],
@@ -2338,10 +2332,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			roar: ["1L52"],
 			seismictoss: ["1M"],
-			slam: ["1L1"],
-			strengh: ["1M"],
-			strength: ["1L37"],
-			submission: ["1M", "1L1"],
+			slam: ["1L3"], // Third inital move
+			strength: ["1M", "1L37"],
+			submission: ["1M", "1L2"], // Second inital move
 			substitute: ["1M"],
 			takedown: ["1M"],
 		},
@@ -2371,7 +2364,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			vinewhip: ["1L11"],
-			wrap: ["1L1"],
+			wrap: ["1L1"], // First inital move
 		},
 		encounters: [
 			{generation: 1, level: 8},
@@ -2379,7 +2372,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	weepinbell: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L2"], // Second inital move
 			bide: ["1M"],
 			constrict: ["1M"],
 			cut: ["1M"],
@@ -2394,7 +2387,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorleaf: ["1L34"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			sleeppowder: ["1L1"],
+			sleeppowder: ["1L4"], // Fourth inital move
 			sludge: ["1M"],
 			smog: ["1L30"],
 			smokescreen: ["1M"],
@@ -2404,8 +2397,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			toxic: ["1L47"],
-			vinewhip: ["1L1"],
-			wrap: ["1L1"],
+			vinewhip: ["1L3"], // Third inital move
+			wrap: ["1L1"], // First inital move
 		},
 	},
 	victreebel: {
@@ -2419,7 +2412,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			growth: ["1M"],
 			hyperbeam: ["1M"],
-			leechlife: ["1L1"],
+			leechlife: ["1L2"], // Second inital move
 			megadrain: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M", "1L56"],
@@ -2427,15 +2420,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			reflect: ["1M"],
 			rest: ["1M"],
 			sludge: ["1M"],
-			smog: ["1L1"],
+			smog: ["1L4"], // Fourth inital move
 			smokescreen: ["1M"],
 			solarbeam: ["1M"],
-			stunspore: ["1L1"],
+			stunspore: ["1L3"], // Third inital move
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			toxic: ["1L48"],
-			vinewhip: ["1L1"],
+			vinewhip: ["1L1"], // First inital move
 		},
 	},
 	tentacool: {
@@ -2455,7 +2448,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			poisonsting: ["1L1"],
+			poisonsting: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			screech: ["1L31"],
@@ -2466,7 +2459,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			watergun: ["1L12"],
-			wrap: ["1L1"],
+			wrap: ["1L2"], // Second inital move
 		},
 		encounters: [
 			{generation: 1, level: 5},
@@ -2474,10 +2467,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	tentacruel: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L3"], // Third inital move
 			acidarmor: ["1L37"],
 			bide: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L4"], // Fourth inital move
 			confuseray: ["1M"],
 			constrict: ["1M", "1L53"],
 			cut: ["1M"],
@@ -2495,11 +2488,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			screech: ["1L32"],
 			sludge: ["1M", "1L42"],
 			substitute: ["1M"],
-			supersonic: ["1L1"],
+			supersonic: ["1L2"], // Second inital move
 			surf: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L1"], // First inital move
 		},
 	},
 	geodude: {
@@ -2515,7 +2508,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			explosion: ["1M"],
 			flamethrower: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			lightscreen: ["1M"],
 			megapunch: ["1M", "1L20"],
 			metronome: ["1M"],
@@ -2527,10 +2520,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			seismictoss: ["1M"],
 			selfdestruct: ["1M", "1L26"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 		},
 		encounters: [
@@ -2539,11 +2532,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	graveler: {
 		learnset: {
-			barrage: ["1L1"],
+			barrage: ["1L3"], // Third inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			counter: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L1"], // First inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			earthquake: ["1M"],
@@ -2552,16 +2545,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			firepunch: ["1L34"],
 			flamethrower: ["1M"],
 			lightscreen: ["1M"],
-			megapunch: ["1M", "1L1"],
+			megapunch: ["1M", "1L2"], // Second inital move
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M", "1L30"],
 			seismictoss: ["1M"],
-			selfdestruct: ["1M", "1L1"],
+			selfdestruct: ["1M", "1L4"], // Fourth inital move
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
@@ -2578,9 +2571,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			earthquake: ["1M"],
-			eggbomb: ["1M", "1L1"],
+			eggbomb: ["1M", "1L3"], // Third inital move
 			explosion: ["1M", "1L44"],
-			firepunch: ["1L1"],
+			firepunch: ["1L4"], // Fourth inital move
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			hyperbeam: ["1M"],
@@ -2590,12 +2583,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			reflect: ["1M"],
-			rest: ["1M", "1L1"],
+			rest: ["1M", "1L2"], // Second inital move
 			rockslide: ["1L54"],
 			seismictoss: ["1M"],
-			selfdestruct: ["1M", "1L1"],
+			selfdestruct: ["1M", "1L1"], // First inital move
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
@@ -2616,21 +2609,21 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hypnosis: ["1L41"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L1"], // First inital move
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			smokescreen: ["1M", "1L31"],
 			solarbeam: ["1M"],
 			stomp: ["1L21"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M", "1L36"],
 		},
 		encounters: [
-			{generation: 1, level: 18},
+			{generation: 1, level: 8},
 		],
 	},
 	rapidash: {
@@ -2639,7 +2632,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L4"], // Fourth inital move
 			doubleteam: ["1M"],
 			drillpeck: ["1L40"],
 			earthquake: ["1M"],
@@ -2654,14 +2647,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			smokescreen: ["1M", "1L1"],
+			smokescreen: ["1M", "1L3"], // Third inital move
 			solarbeam: ["1M"],
-			stomp: ["1L1"],
-			strengh: ["1M"],
+			stomp: ["1L1"], // First inital move
+			strength: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
-			takedown: ["1M", "1L1"],
+			takedown: ["1M", "1L2"], // Second inital move
 			twineedle: ["1L53"],
 		},
 	},
@@ -2670,10 +2663,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			bubblebeam: ["1M", "1L32"],
-			confusion: ["1L1"],
-			defensecurl: ["1L1"],
+			confusion: ["1L2"], // Second inital move
+			defensecurl: ["1L1"], // First inital move
 			dig: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
@@ -2691,11 +2684,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			payday: ["1M"],
 			poisongas: ["1M"],
 			psybeam: ["1L23"],
-			psychic: ["1L40"],
-			psychicm: ["1M"],
+			psychic: ["1L40", "1M"],
 			reflect: ["1M"],
 			rest: ["1M", "1L36"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
@@ -2713,7 +2705,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			amnesia: ["1L45"],
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L1"], // First inital move
 			counter: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
@@ -2723,7 +2715,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			headbutt: ["1L1"],
+			headbutt: ["1L3"], // Third inital move
 			hydropump: ["1M", "1L50"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
@@ -2734,15 +2726,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			psybeam: ["1L1"],
-			psychic: ["1L41"],
-			psychicm: ["1M"],
+			psybeam: ["1L2"], // Second inital move
+			psychic: ["1L41", "1M"],
 			razorwind: ["1M"],
 			recover: ["1L56"],
 			reflect: ["1M"],
-			rest: ["1M", "1L1"],
+			rest: ["1M", "1L4"], // Fourth inital move
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -2775,11 +2766,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			supersonic: ["1L29"],
 			swift: ["1M", "1L25"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M", "1L32"],
-			thundershock: ["1L1"],
+			thundershock: ["1L2"], // Second inital move
 			thunderwave: ["1M"],
 		},
 		encounters: [
@@ -2802,13 +2793,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			rockthrow: ["1L1"],
+			rockthrow: ["1L3"], // Third inital move
 			screech: ["1L49"],
 			selfdestruct: ["1M"],
-			sonicboom: ["1L1"],
+			sonicboom: ["1L2"], // Second inital move
 			substitute: ["1M"],
-			supersonic: ["1L1"],
-			swift: ["1M", "1L1"],
+			supersonic: ["1L4"], // Fourth inital move
+			swift: ["1M", "1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunder: ["1L54"],
@@ -2838,17 +2829,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			payday: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L3"], // Third inital move
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			roar: ["1L1"],
-			sandattack: ["1L1"],
+			roar: ["1L2"], // Second inital move
+			sandattack: ["1L1"], // First inital move
 			skyattack: ["1M"],
 			slash: ["1L43"],
 			softboiled: ["1M", "1L47"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -2872,11 +2863,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			fly: ["1M"],
 			furyattack: ["1L26"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			horndrill: ["1M"],
 			lowkick: ["1L17"],
 			mimic: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L2"], // Second inital move
 			poisongas: ["1M"],
 			quickattack: ["1L12"],
 			rage: ["1L22"],
@@ -2905,15 +2896,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleteam: ["1M"],
 			drillpeck: ["1L42"],
 			fly: ["1M"],
-			furyattack: ["1L1"],
+			furyattack: ["1L3"], // Third inital move
 			horndrill: ["1M"],
 			hyperbeam: ["1M"],
 			jumpkick: ["1L48"],
-			lowkick: ["1L1"],
+			lowkick: ["1L4"], // Fourth inital move
 			megakick: ["1L54"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L1"], // First inital move
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -2923,7 +2914,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swift: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
-			thrash: ["1L1"],
+			thrash: ["1L2"], // Second inital move
 			triattack: ["1L31"],
 			whirlwind: ["1M"],
 		},
@@ -2935,9 +2926,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M"],
 			bubblebeam: ["1M", "1L25"],
 			doubleedge: ["1M"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			headbutt: ["1L28"],
 			horndrill: ["1M"],
 			hydropump: ["1M"],
@@ -2949,7 +2940,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			rest: ["1M", "1L36"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
@@ -2962,27 +2953,27 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	dewgong: {
 		learnset: {
-			aurorabeam: ["1L1"],
+			aurorabeam: ["1L4"], // Fourth inital move
 			bide: ["1M"],
 			blizzard: ["1L47"],
 			bodyslam: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L2"], // Second inital move
 			doubleedge: ["1M", "1L42"],
 			doubleteam: ["1M"],
 			drillpeck: ["1L34"],
-			headbutt: ["1L1"],
+			headbutt: ["1L3"], // Third inital move
 			horndrill: ["1M", "1L54"],
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			lick: ["1L1"],
+			lick: ["1L1"], // First inital move
 			mimic: ["1M"],
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M", "1L38"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
@@ -2992,12 +2983,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	grimer: {
 		learnset: {
-			acid: ["1L1"],
+			acid: ["1L3"], // Third inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			confuseray: ["1M"],
 			dig: ["1M"],
-			disable: ["1L1"],
+			disable: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			explosion: ["1M"],
@@ -3011,14 +3002,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			minimize: ["1L34"],
 			poisongas: ["1M"],
 			poisonpowder: ["1L22"],
-			pound: ["1L1"],
+			pound: ["1L1"], // First inital move
 			rest: ["1M"],
 			screech: ["1L30"],
 			selfdestruct: ["1M"],
 			sludge: ["1M", "1L37"],
 			smog: ["1L26"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
@@ -3043,15 +3034,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			megadrain: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
-			minimize: ["1L1"],
+			minimize: ["1L2"], // Second inital move
 			poisongas: ["1M", "1L57"],
 			rest: ["1M"],
-			screech: ["1L1"],
+			screech: ["1L3"], // Third inital move
 			selfdestruct: ["1M"],
-			sludge: ["1M", "1L1"],
-			smog: ["1L1"],
+			sludge: ["1M", "1L4"], // Fourth inital move
+			smog: ["1L1"], // First inital move
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			takedown: ["1M"],
@@ -3070,7 +3061,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			explosion: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hydropump: ["1M"],
 			icebeam: ["1M"],
 			leer: ["1L24"],
@@ -3085,10 +3076,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			supersonic: ["1L11"],
 			surf: ["1M"],
 			swift: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L3"], // Third inital move
 			withdraw: ["1L20"],
 		},
 		encounters: [
@@ -3097,9 +3088,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	cloyster: {
 		learnset: {
-			aurorabeam: ["1L1"],
+			aurorabeam: ["1L2"], // Second inital move
 			barrage: ["1L46"],
-			barrier: ["1L1"],
+			barrier: ["1L4"], // Fourth inital move
 			bide: ["1M"],
 			blizzard: ["1L60"],
 			bodyslam: ["1M"],
@@ -3115,20 +3106,23 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			lightscreen: ["1M"],
 			mimic: ["1M"],
 			mist: ["1M"],
-			pinmissile: ["1L26"],
+			pinmissile: ["1L25"],
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			selfdestruct: ["1M"],
 			spikecannon: ["1L32"],
 			substitute: ["1M"],
-			supersonic: ["1L1"],
+			supersonic: ["1L1"], // First inital move
 			surf: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			withdraw: ["1L1"],
+			withdraw: ["1L3"], // Third inital move
 		},
+		encounters: [
+			{generation: 1, level: 35}, //the cloyster conflict should get solved by this
+		],
 	},
 	gastly: {
 		learnset: {
@@ -3138,16 +3132,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dreameater: ["1M"],
 			explosion: ["1M"],
 			fly: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L2"], // Second inital move
 			haze: ["1L14"],
-			hydropump: ["1M"],
 			hypnosis: ["1L23"],
-			lick: ["1L1"],
+			lick: ["1L1"], // First inital move
 			megadrain: ["1M"],
 			mimic: ["1M"],
-			mist: ["1L20"],
+			mist: ["1M", "1L20"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			rest: ["1M"],
 			screech: ["1L17"],
 			selfdestruct: ["1M"],
@@ -3158,6 +3151,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 14},
+		],
 	},
 	haunter: {
 		learnset: {
@@ -3167,17 +3163,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dreameater: ["1M", "1L31"],
 			explosion: ["1M"],
 			fly: ["1M"],
-			haze: ["1L1"],
-			hydropump: ["1M"],
-			hypnosis: ["1L1"],
+			haze: ["1L1"], // First inital move
+			hypnosis: ["1L4"], // Fourth inital move
 			megadrain: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
-			mist: ["1L1"],
+			mist: ["1M", "1L3"], // Third inital move
 			poisongas: ["1M", "1L39"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			rest: ["1M"],
-			screech: ["1L1"],
+			screech: ["1L2"], // Second inital move
 			selfdestruct: ["1M"],
 			sludge: ["1M"],
 			smog: ["1L27"],
@@ -3197,28 +3192,28 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			disable: ["1L54"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M", "1L39"],
-			dreameater: ["1M", "1L1"],
+			dreameater: ["1M", "1L2"], // Second inital move
 			explosion: ["1M"],
 			fly: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			megadrain: ["1M"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			nightshade: ["1L59"],
-			poisongas: ["1M", "1L1"],
-			psychicm: ["1M"],
+			poisongas: ["1M", "1L4"], // Fourth inital move
+			psychic: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
 			sludge: ["1M"],
-			smog: ["1L1"],
+			smog: ["1L1"], // First inital move
 			smokescreen: ["1M", "1L49"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
-			supersonic: ["1L1"],
+			supersonic: ["1L3"], // Third inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
@@ -3239,7 +3234,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			glare: ["1L52"],
 			gust: ["1L21"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
@@ -3247,17 +3242,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			roar: ["1L29"],
 			rockslide: ["1L47"],
-			rockthrow: ["1L1"],
+			rockthrow: ["1L4"], // Fourth inital move
 			selfdestruct: ["1M"],
 			slam: ["1L37"],
-			strengh: ["1M"],
-			strength: ["1L33"],
+			strength: ["1M", "1L33"],
 			substitute: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			whirlwind: ["1M"],
-			wrap: ["1L1"],
+			wrap: ["1L3"], // Third inital move
 		},
+		encounters: [
+			{generation: 1, level: 18},
+		],
 	},
 	drowzee: {
 		learnset: {
@@ -3272,7 +3269,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			headbutt: ["1L24"],
-			hypnosis: ["1L1"],
+			hypnosis: ["1L1"], // First inital move
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			megapunch: ["1M"],
@@ -3280,9 +3277,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			poisongas: ["1M"],
 			poisonpowder: ["1L20"],
-			pound: ["1L1"],
+			pound: ["1L2"], // Second inital move
 			psybeam: ["1L28"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
@@ -3295,22 +3292,25 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 17},
+		],
 	},
 	hypno: {
 		learnset: {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			confuseray: ["1M"],
-			confusion: ["1L1"],
+			confusion: ["1L1"], // First inital move
 			counter: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M", "1L38"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			headbutt: ["1L1"],
+			headbutt: ["1L4"], // Fourth inital move
 			hyperbeam: ["1M"],
-			hypnosis: ["1L1"],
+			hypnosis: ["1L3"], // Third inital move
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			lovelykiss: ["1L54"],
@@ -3319,9 +3319,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonpowder: ["1L1"],
+			poisonpowder: ["1L2"], // Second inital move
 			psybeam: ["1L29"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			psywave: ["1L48"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -3341,7 +3341,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		learnset: {
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			bubble: ["1L1"],
+			bubble: ["1L1"], // First inital move
 			bubblebeam: ["1M", "1L23"],
 			constrict: ["1L31"],
 			cut: ["1M"],
@@ -3352,25 +3352,28 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			harden: ["1L19"],
 			hydropump: ["1M"],
 			icebeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L2"], // Second inital move
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M"],
 			stomp: ["1L27"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			vicegrip: ["1L14"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	kingler: {
 		learnset: {
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L3"], // Third inital move
 			constrict: ["1L33"],
 			crabhammer: ["1L41"],
 			cut: ["1M"],
@@ -3380,7 +3383,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			earthquake: ["1M"],
 			eggbomb: ["1M"],
 			guillotine: ["1M", "1L53"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
@@ -3388,20 +3391,20 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M"],
-			stomp: ["1L1"],
-			strengh: ["1M"],
+			stomp: ["1L4"], // Fourth inital move
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swordsdance: ["1M", "1L47"],
 			takedown: ["1M"],
-			vicegrip: ["1L1"],
+			vicegrip: ["1L1"], // First inital move
 		},
 	},
 	voltorb: {
 		learnset: {
 			bide: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L2"], // Second inital move
 			doubleteam: ["1M"],
 			explosion: ["1M"],
 			flamethrower: ["1M"],
@@ -3412,7 +3415,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			screech: ["1L34"],
@@ -3427,6 +3430,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thundershock: ["1L12"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 11},
+		],
 	},
 	electrode: {
 		learnset: {
@@ -3436,19 +3442,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			growth: ["1M", "1L48"],
-			headbutt: ["1L1"],
+			headbutt: ["1L1"], // First inital move
 			hyperbeam: ["1M", "1L53"],
-			lightscreen: ["1M", "1L1"],
+			lightscreen: ["1M", "1L2"], // Second inital move
 			mimic: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			screech: ["1L35"],
-			selfdestruct: ["1M", "1L1"],
+			selfdestruct: ["1M", "1L3"], // Third inital move
 			skullbash: ["1L30"],
 			smokescreen: ["1M"],
-			sonicboom: ["1L1"],
+			sonicboom: ["1L4"], // Fourth inital move
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
@@ -3459,7 +3465,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	exeggcute: {
 		learnset: {
-			absorb: ["1L1"],
+			absorb: ["1L2"], // Second inital move
 			bide: ["1M"],
 			confusion: ["1L14"],
 			doubleedge: ["1M"],
@@ -3468,33 +3474,36 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			explosion: ["1M"],
 			flash: ["1M"],
-			hypnosis: ["1L1"],
-			leechseed: ["1L1"],
+			hypnosis: ["1L1"], // First inital move
+			leechseed: ["1L3"], // Third inital move
 			lightscreen: ["1M"],
 			mimic: ["1M"],
 			petaldance: ["1L23"],
 			poisongas: ["1M"],
 			poisonpowder: ["1L35"],
 			psybeam: ["1L31"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M", "1L19"],
 			rest: ["1M"],
 			selfdestruct: ["1M"],
 			sludge: ["1M"],
 			softboiled: ["1M"],
 			solarbeam: ["1M", "1L39"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			stunspore: ["1L27"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 14},
+		],
 	},
 	exeggutor: {
 		learnset: {
 			bide: ["1M"],
-			confusion: ["1L1"],
+			confusion: ["1L2"], // Second inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
@@ -3502,16 +3511,15 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			explosion: ["1M"],
 			flash: ["1M"],
 			hyperbeam: ["1M"],
-			hypnosis: ["1L1"],
+			hypnosis: ["1L3"], // Third inital move
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			mimic: ["1M"],
-			petaldance: ["1L1"],
+			petaldance: ["1L4"], // Fourth inital move
 			poisongas: ["1M"],
 			psybeam: ["1L28"],
-			psychic: ["1L60"],
-			psychicm: ["1M"],
-			reflect: ["1M", "1L1"],
+			psychic: ["1L60", "1M"],
+			reflect: ["1M", "1L1"], // First inital move
 			rest: ["1M"],
 			selfdestruct: ["1M"],
 			sleeppowder: ["1L52"],
@@ -3519,7 +3527,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			softboiled: ["1M"],
 			solarbeam: ["1M", "1L44"],
 			stomp: ["1L20"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
@@ -3544,21 +3552,21 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			focusenergy: ["1L21"],
-			growl: ["1L1"],
+			growl: ["1L1"], // First inital move
 			headbutt: ["1L24"],
-			hydropump: ["1M"],
 			icebeam: ["1M"],
 			icepunch: ["1L30"],
 			megapunch: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			rage: ["1L1"],
+			rage: ["1L2"], // Second inital move
 			razorwind: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			skullbash: ["1L33"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
@@ -3566,13 +3574,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			tailwhip: ["1L9"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 8},
+		],
 	},
 	marowak: {
 		learnset: {
-			aurorabeam: ["1L1"],
+			aurorabeam: ["1L2"], // Second inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
-			boneclub: ["1L1"],
+			boneclub: ["1L3"], // Third inital move
 			bonemerang: ["1L27"],
 			bubblebeam: ["1M"],
 			counter: ["1M"],
@@ -3583,26 +3594,26 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			fissure: ["1M", "1L48"],
 			flamethrower: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L4"], // Fourth inital move
 			headbutt: ["1L13"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M", "1L41"],
 			icepunch: ["1L20"],
 			megapunch: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			skullbash: ["1L34"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L1"], // First inital move
 			takedown: ["1M"],
 		},
 	},
@@ -3615,35 +3626,38 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			constrict: ["1M"],
 			counter: ["1M"],
 			doubleedge: ["1M"],
-			doublekick: ["1L1"],
+			doublekick: ["1L1"], // First inital move
 			doubleteam: ["1M"],
 			earthquake: ["1M"],
 			eggbomb: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L2"], // Second inital move
 			hijumpkick: ["1L49"],
 			hyperbeam: ["1M"],
 			jumpkick: ["1L37"],
-			meditate: ["1L1"],
+			meditate: ["1L4"], // Fourth inital move
 			megakick: ["1L53"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L3"], // Third inital move
 			rest: ["1M"],
 			rollingkick: ["1L25"],
 			seismictoss: ["1M", "1L33"],
 			stomp: ["1L29"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 24},
+		],
 	},
 	hitmonchan: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L2"], // Second inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			cometpunch: ["1L25"],
@@ -3654,24 +3668,27 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			earthquake: ["1M"],
 			eggbomb: ["1M"],
 			firepunch: ["1L33"],
-			growth: ["1M", "1L1"],
+			growth: ["1M", "1L4"], // Fourth inital move
 			hyperbeam: ["1M"],
 			icepunch: ["1L49"],
-			lowkick: ["1L1"],
+			lowkick: ["1L1"], // First inital move
 			megapunch: ["1M", "1L29"],
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L3"], // Third inital move
 			rest: ["1M"],
 			seismictoss: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M", "1L37"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
 			thunderpunch: ["1L41"],
 		},
+		encounters: [
+			{generation: 1, level: 24},
+		],
 	},
 	lickitung: {
 		learnset: {
@@ -3682,7 +3699,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			constrict: ["1M"],
 			counter: ["1M"],
 			cut: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L1"], // First inital move
 			dig: ["1M"],
 			disable: ["1L30"],
 			doubleedge: ["1M"],
@@ -3694,7 +3711,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			lick: ["1L1"],
+			lick: ["1L2"], // Second inital move
 			megapunch: ["1M"],
 			mimic: ["1M"],
 			mist: ["1M"],
@@ -3705,7 +3722,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			seismictoss: ["1M"],
 			solarbeam: ["1M"],
 			stomp: ["1L20"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M", "1L41"],
 			supersonic: ["1L16"],
@@ -3714,13 +3731,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
-			wrap: ["1L1"],
+			wrap: ["1L3"], // Third inital move
 		},
+		encounters: [
+			{generation: 1, level: 19},
+		],
 	},
 	koffing: {
 		learnset: {
 			bide: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L3"], // Third inital move
 			doubleteam: ["1M"],
 			explosion: ["1M"],
 			firespin: ["1L36"],
@@ -3731,7 +3751,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			haze: ["1L14"],
 			mimic: ["1M"],
 			poisongas: ["1M", "1L17"],
-			poisonpowder: ["1L1"],
+			poisonpowder: ["1L1"], // First inital move
 			psybeam: ["1L32"],
 			rest: ["1M"],
 			selfdestruct: ["1M", "1L24"],
@@ -3739,11 +3759,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			smog: ["1L28"],
 			smokescreen: ["1M", "1L21"],
 			substitute: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 16},
+		],
 	},
 	weezing: {
 		learnset: {
@@ -3759,13 +3782,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			psybeam: ["1L1"],
+			psybeam: ["1L4"], // Fourth inital move
 			recover: ["1L51"],
 			rest: ["1M"],
-			selfdestruct: ["1M", "1L1"],
+			selfdestruct: ["1M", "1L3"], // Third inital move
 			sludge: ["1M", "1L42"],
-			smog: ["1L1"],
-			smokescreen: ["1M", "1L1"],
+			smog: ["1L2"], // Second inital move
+			smokescreen: ["1M", "1L1"], // First inital move
 			substitute: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
@@ -3779,7 +3802,6 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M"],
 			boneclub: ["1L20"],
 			counter: ["1M"],
-			cut: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -3788,38 +3810,41 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			fissure: ["1M"],
 			flamethrower: ["1M"],
-			hornattack: ["1L1"],
+			hornattack: ["1L2"], // Second inital move
 			horndrill: ["1M"],
-			hydropump: ["1M"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M"],
 			rockthrow: ["1L23"],
-			sandattack: ["1L1"],
+			sandattack: ["1L1"], // First inital move
 			smokescreen: ["1M"],
 			stomp: ["1L16"],
-			strengh: ["1M"],
-			strength: ["1L40"],
+			strength: ["1M", "1L40"],
 			substitute: ["1M"],
 			swordsdance: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L3"], // Third inital move
 			takedown: ["1M", "1L32"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 19},
+		],
 	},
 	rhydon: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L2"], // Second inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			counter: ["1M"],
+			cut: ["1M"],
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
-			earthquake: ["1M", "1L1"],
+			earthquake: ["1M", "1L3"], // Third inital move
 			eggbomb: ["1M", "1L54"],
 			fissure: ["1M", "1L48"],
 			flamethrower: ["1M"],
@@ -3836,13 +3861,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			smokescreen: ["1M"],
-			strengh: ["1M"],
-			strength: ["1L1"],
+			strength: ["1M", "1L4"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			swordsdance: ["1M"],
-			takedown: ["1M", "1L1"],
+			takedown: ["1M", "1L1"], // First inital move
 			thunderbolt: ["1M"],
 			twineedle: ["1L60"],
 		},
@@ -3862,8 +3886,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			eggbomb: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			growl: ["1L1"],
-			hydropump: ["1M"],
+			growl: ["1L3"], // Third inital move
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M", "1L49"],
@@ -3871,9 +3894,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			metronome: ["1M", "1L24"],
 			mimic: ["1M"],
 			minimize: ["1L29"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
-			psychicm: ["1M"],
+			pound: ["1L1"], // First inital move
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
@@ -3881,16 +3905,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sing: ["1L44"],
 			softboiled: ["1M", "1L39"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M", "1L34"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 23},
+		],
 	},
 	tangela: {
 		learnset: {
@@ -3916,15 +3943,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sludge: ["1M"],
 			solarbeam: ["1M", "1L46"],
 			stomp: ["1L18"],
-			stunspore: ["1L1"],
+			stunspore: ["1L3"], // Third inital move
 			substitute: ["1M"],
 			swordsdance: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
-			vinewhip: ["1L1"],
-			wrap: ["1L1"],
+			vinewhip: ["1L2"], // Second inital move
+			wrap: ["1L1"], // First inital move
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	kangaskhan: {
 		learnset: {
@@ -3946,36 +3976,39 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			leer: ["1L30"],
-			lowkick: ["1L1"],
+			lowkick: ["1L3"], // Third inital move
 			megakick: ["1L55"],
 			megapunch: ["1M", "1L34"],
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
-			rage: ["1L1"],
+			quickattack: ["1L2"], // Second inital move
+			rage: ["1L1"], // First inital move
 			rest: ["1M"],
 			roar: ["1L49"],
 			seismictoss: ["1M"],
 			slam: ["1L40"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	horsea: {
 		learnset: {
 			bide: ["1M"],
-			bubble: ["1L1"],
+			bubble: ["1L1"], // First inital move
 			bubblebeam: ["1M", "1L24"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L2"], // Second inital move
 			gust: ["1L14"],
 			hydropump: ["1M"],
 			icebeam: ["1M"],
@@ -3992,26 +4025,29 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			watergun: ["1L11"],
 			whirlwind: ["1M", "1L33"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	seadra: {
 		learnset: {
 			agility: ["1L47"],
 			aurorabeam: ["1L38"],
 			bide: ["1M"],
-			bubblebeam: ["1M", "1L1"],
+			bubblebeam: ["1M", "1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M", "1L51"],
-			gust: ["1L1"],
+			gust: ["1L1"], // First inital move
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L2"], // Second inital move
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
 			rest: ["1M"],
-			smokescreen: ["1M", "1L1"],
+			smokescreen: ["1M", "1L4"], // Fourth inital move
 			substitute: ["1M"],
 			surf: ["1M", "1L42"],
 			swift: ["1M"],
@@ -4034,7 +4070,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			payday: ["1M"],
-			peck: ["1L1"],
+			peck: ["1L1"], // First inital move
 			poisongas: ["1M"],
 			psybeam: ["1L19"],
 			rest: ["1M"],
@@ -4043,11 +4079,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			surf: ["1M"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			watergun: ["1L10"],
 		},
+		encounters: [
+			{generation: 1, level: 3},
+		],
 	},
 	seaking: {
 		learnset: {
@@ -4058,7 +4097,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			furyattack: ["1L34"],
-			hornattack: ["1L1"],
+			hornattack: ["1L3"], // Third inital move
 			horndrill: ["1M", "1L45"],
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
@@ -4067,10 +4106,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			psybeam: ["1L1"],
+			psybeam: ["1L4"], // Fourth inital move
 			rest: ["1M"],
 			substitute: ["1M"],
-			supersonic: ["1L1"],
+			supersonic: ["1L1"], // First inital move
 			surf: ["1M"],
 			swift: ["1M"],
 			swordsdance: ["1M"],
@@ -4078,7 +4117,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			teleport: ["1M"],
 			twineedle: ["1L39"],
 			waterfall: ["1L29"],
-			watergun: ["1L1"],
+			watergun: ["1L2"], // Second inital move
 		},
 	},
 	staryu: {
@@ -4092,7 +4131,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dreameater: ["1M"],
 			flash: ["1M", "1L19"],
 			growth: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hydropump: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
@@ -4100,7 +4139,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			minimize: ["1L32"],
 			mist: ["1M", "1L15"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			recover: ["1L38"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -4111,13 +4150,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M", "1L35"],
-			thundershock: ["1L1"],
+			thundershock: ["1L1"], // First inital move
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	starmie: {
 		learnset: {
-			aurorabeam: ["1L1"],
+			aurorabeam: ["1L2"], // Second inital move
 			bide: ["1M"],
 			blizzard: ["1L61"],
 			bubblebeam: ["1M"],
@@ -4132,17 +4174,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			icebeam: ["1M", "1L33"],
 			lightscreen: ["1M"],
 			mimic: ["1M"],
-			minimize: ["1L1"],
+			minimize: ["1L3"], // Third inital move
 			mist: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			recover: ["1L40"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			sonicboom: ["1L1"],
+			sonicboom: ["1L4"], // Fourth inital move
 			substitute: ["1M"],
 			surf: ["1M"],
-			swift: ["1M", "1L1"],
+			swift: ["1M", "1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunder: ["1L47"],
@@ -4156,24 +4198,24 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			confuseray: ["1M"],
-			confusion: ["1L1"],
+			confusion: ["1L3"], // Third inital move
 			counter: ["1M"],
-			defensecurl: ["1L1"],
+			defensecurl: ["1L2"], // Second inital move
 			doubleedge: ["1M"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L1"], // First inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flash: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			lightscreen: ["1M", "1L24"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M", "1L20"],
+			mist: ["1M"],
 			petaldance: ["1L32"],
 			poisongas: ["1M"],
 			psybeam: ["1L28"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			psywave: ["1L50"],
 			razorwind: ["1M"],
 			reflect: ["1M", "1L23"],
@@ -4187,10 +4229,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 7},
+		],
 	},
 	scyther: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L4"], // Fourth inital move
 			bide: ["1M"],
 			constrict: ["1M", "1L32"],
 			counter: ["1M"],
@@ -4200,12 +4245,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fly: ["1M"],
 			guillotine: ["1M", "1L50"],
 			hyperbeam: ["1M"],
-			leechlife: ["1L1"],
-			leer: ["1L1"],
+			leechlife: ["1L3"], // Third inital move
+			leer: ["1L2"], // Second inital move
 			lightscreen: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L1"], // First inital move
 			razorwind: ["1M", "1L36"],
 			rest: ["1M"],
 			skyattack: ["1M", "1L56"],
@@ -4219,6 +4264,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlwind: ["1M"],
 			wingattack: ["1L24"],
 		},
+		encounters: [
+			{generation: 1, level: 23},
+		],
 	},
 	jynx: {
 		learnset: {
@@ -4227,30 +4275,28 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			bodyslam: ["1M", "1L31"],
 			bubblebeam: ["1M"],
 			confuseray: ["1M"],
-			confusion: ["1L1"],
+			confusion: ["1L2"], // Second inital move
 			counter: ["1M"],
 			doubleedge: ["1M"],
-			doubleslap: ["1L1"],
+			doubleslap: ["1L1"], // First inital move
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flash: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			hypnosis: ["1L24"],
 			icebeam: ["1M"],
 			icepunch: ["1L35"],
-			lick: ["1L1"],
+			lick: ["1L3"], // Third inital move
 			lightscreen: ["1M"],
 			lovelykiss: ["1L40"],
 			megadrain: ["1M", "1L50"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
-			mist: ["1L1"],
+			mist: ["1M", "1L4"], // Fourth inital move
 			poisongas: ["1M"],
 			psybeam: ["1L27"],
-			psychic: ["1L45"],
-			psychicm: ["1M"],
+			psychic: ["1L45", "1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
@@ -4259,6 +4305,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 23},
+		],
 	},
 	electabuzz: {
 		learnset: {
@@ -4271,32 +4320,35 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			flash: ["1M"],
 			hyperbeam: ["1M"],
 			karatechop: ["1L50"],
-			leer: ["1L1"],
+			leer: ["1L3"], // Third inital move
 			lightscreen: ["1M", "1L40"],
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
-			quickattack: ["1L1"],
+			psychic: ["1M"],
+			quickattack: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			roar: ["1L24"],
 			rollingkick: ["1L31"],
 			seismictoss: ["1M"],
 			sonicboom: ["1L27"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
-			swift: ["1M", "1L1"],
+			swift: ["1M", "1L4"], // Fourth inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunder: ["1L55"],
 			thunderbolt: ["1M", "1L45"],
 			thunderpunch: ["1L35"],
-			thundershock: ["1L1"],
+			thundershock: ["1L2"], // Second inital move
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 23},
+		],
 	},
 	magmar: {
 		learnset: {
@@ -4307,18 +4359,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			counter: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
-			ember: ["1L1"],
+			ember: ["1L2"], // Second inital move
 			fireblast: ["1L55"],
 			firepunch: ["1L35"],
 			flamethrower: ["1M", "1L45"],
 			hyperbeam: ["1M"],
-			leer: ["1L1"],
+			leer: ["1L3"], // Third inital move
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
 			poisongas: ["1M"],
-			poisonpowder: ["1L1"],
-			psychicm: ["1M"],
+			poisonpowder: ["1L4"], // Fourth inital move
+			psychic: ["1M"],
 			razorwind: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
@@ -4327,14 +4379,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			smokescreen: ["1M", "1L27"],
 			softboiled: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			supersonic: ["1L24"],
-			tackle: ["1L1"],
+			tackle: ["1L1"], // First inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 23},
+		],
 	},
 	pinsir: {
 		learnset: {
@@ -4348,26 +4403,29 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dragonrage: ["1M"],
 			earthquake: ["1M"],
 			eggbomb: ["1M"],
-			focusenergy: ["1L1"],
+			focusenergy: ["1L3"], // Third inital move
 			guillotine: ["1M", "1L40"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hijumpkick: ["1L56"],
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			pinmissile: ["1L24"],
 			poisongas: ["1M"],
 			rest: ["1M"],
-			rollingkick: ["1L1"],
+			rollingkick: ["1L4"], // Fourth inital move
 			seismictoss: ["1M", "1L32"],
 			slash: ["1L45"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M", "1L36"],
 			substitute: ["1M"],
 			swordsdance: ["1M", "1L50"],
 			takedown: ["1M"],
-			vicegrip: ["1L1"],
+			vicegrip: ["1L1"], // First inital move
 			wrap: ["1L28"],
 		},
+		encounters: [
+			{generation: 1, level: 18},
+		],
 	},
 	tauros: {
 		learnset: {
@@ -4381,48 +4439,53 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M"],
 			flamethrower: ["1M"],
 			furyattack: ["1L39"],
-			hornattack: ["1L1"],
+			hornattack: ["1L4"], // Fourth inital move
 			horndrill: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			megakick: ["1L61"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
-			rage: ["1L1"],
+			rage: ["1L3"], // Third inital move
 			rest: ["1M", "1L34"],
 			skullbash: ["1L44"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
-			tackle: ["1L1"],
-			tailwhip: ["1L1"],
+			tackle: ["1L1"], // First inital move
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thrash: ["1L30"],
 			thunderbolt: ["1M"],
 			twineedle: ["1L49"],
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	magikarp: {
 		learnset: {
-			bubble: ["1L1"],
+			bubble: ["1L1"], // First inital move
 			bubblebeam: ["1M", "1L25"],
 			dragonrage: ["1M"],
-			hydropump: ["1L36"],
-			mist: ["1M"],
+			hydropump: ["1M", "1L36"],
 			tackle: ["1L14"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	gyarados: {
 		learnset: {
 			bide: ["1M"],
 			bite: ["1L20"],
 			bodyslam: ["1M"],
-			bubble: ["1L1"],
-			bubblebeam: ["1M", "1L1"],
+			bubble: ["1L1"], // First inital move
+			bubblebeam: ["1M", "1L4"], // Fourth inital move
 			constrict: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -4442,16 +4505,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			skyattack: ["1M"],
 			splash: ["1L43"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
-			tackle: ["1L1"],
+			tackle: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			thrash: ["1L38"],
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 			waterfall: ["1L34"],
-			whirlwind: ["1M", "1L1"],
+			whirlwind: ["1M", "1L3"], // Third inital move
 			wingattack: ["1L24"],
 		},
 	},
@@ -4467,8 +4530,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dragonrage: ["1M", "1L47"],
 			dreameater: ["1M"],
 			fissure: ["1M"],
-			growl: ["1L1"],
-			gust: ["1L1"],
+			growl: ["1L1"], // First inital move
+			gust: ["1L2"], // Second inital move
 			horndrill: ["1M"],
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
@@ -4476,13 +4539,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M", "1L23"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			sing: ["1L1"],
+			sing: ["1L3"], // Third inital move
 			slam: ["1L29"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			supersonic: ["1L26"],
 			surf: ["1M", "1L33"],
@@ -4492,11 +4555,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderwave: ["1M"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	ditto: {
 		learnset: {
-			transform: ["1L1"],
+			transform: ["1L1"], // First inital move
 		},
+		encounters: [
+			{generation: 1, level: 35},
+		],
 	},
 	eevee: {
 		learnset: {
@@ -4506,7 +4575,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L3"], // Third inital move
 			growth: ["1M", "1L27"],
 			mimic: ["1M"],
 			payday: ["1M"],
@@ -4517,11 +4586,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			sandattack: ["1L20"],
 			substitute: ["1M"],
 			swift: ["1M"],
-			tackle: ["1L1"],
-			tailwhip: ["1L1"],
+			tackle: ["1L1"], // First inital move
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M", "1L30"],
 			teleport: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 15},
+		],
 	},
 	vaporeon: {
 		learnset: {
@@ -4533,7 +4605,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			growth: ["1M", "1L37"],
 			haze: ["1L33"],
 			hydropump: ["1M", "1L56"],
@@ -4543,18 +4615,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L4"], // Fourth inital move
 			reflect: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
+			sandattack: ["1L3"], // Third inital move
 			spikecannon: ["1L51"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M", "1L41"],
 			swift: ["1M", "1L29"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L1"], // First inital move
 		},
 	},
 	jolteon: {
@@ -4568,7 +4640,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doublekick: ["1L33"],
 			doubleteam: ["1M"],
 			flash: ["1M"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			growth: ["1M", "1L37"],
 			hyperbeam: ["1M"],
 			lightscreen: ["1M"],
@@ -4576,19 +4648,19 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			payday: ["1M"],
 			pinmissile: ["1L51"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L4"], // Fourth inital move
 			reflect: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
+			sandattack: ["1L3"], // Third inital move
 			sonicboom: ["1L25"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M", "1L29"],
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunder: ["1L56"],
 			thunderbolt: ["1M", "1L41"],
-			thundershock: ["1L1"],
+			thundershock: ["1L1"], // First inital move
 			thunderwave: ["1M"],
 		},
 	},
@@ -4601,22 +4673,22 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dig: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
-			ember: ["1L1"],
+			ember: ["1L1"], // First inital move
 			fireblast: ["1L56"],
 			flamethrower: ["1M", "1L41"],
-			growl: ["1L1"],
+			growl: ["1L2"], // Second inital move
 			growth: ["1M", "1L37"],
 			hyperbeam: ["1M"],
 			mimic: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L4"], // Fourth inital move
 			reflect: ["1M"],
 			rest: ["1M"],
-			sandattack: ["1L1"],
+			sandattack: ["1L3"], // Third inital move
 			smog: ["1L33"],
 			smokescreen: ["1M", "1L25"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M", "1L29"],
 			swordsdance: ["1M", "1L46"],
@@ -4629,24 +4701,23 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			agility: ["1L27"],
 			bide: ["1M"],
 			confuseray: ["1M"],
-			confusion: ["1L1"],
-			conversion: ["1L1"],
+			confusion: ["1L1"], // First inital move
+			conversion: ["1L4"], // Fourth inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dreameater: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
 			fly: ["1M"],
-			growth: ["1M", "1L1"],
-			hydropump: ["1M"],
+			growth: ["1M", "1L2"], // Second inital move
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			psybeam: ["1L24"],
-			psychic: ["1L37"],
-			psychicm: ["1M"],
+			psychic: ["1L37", "1M"],
 			razorwind: ["1M"],
 			recover: ["1L41"],
 			reflect: ["1M"],
@@ -4660,10 +4731,13 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M", "1L46"],
-			thundershock: ["1L1"],
+			thundershock: ["1L3"], // Third inital move
 			thunderwave: ["1M"],
 			triattack: ["1L33"],
 		},
+		encounters: [
+			{generation: 1, level: 22},
+		],
 	},
 	omanyte: {
 		learnset: {
@@ -4679,7 +4753,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			eggbomb: ["1M"],
-			harden: ["1L1"],
+			harden: ["1L2"], // Second inital move
 			hydropump: ["1M"],
 			icebeam: ["1M"],
 			mimic: ["1M"],
@@ -4687,26 +4761,29 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			poisongas: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			rockthrow: ["1L1"],
+			rockthrow: ["1L3"], // Third inital move
 			selfdestruct: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
-			watergun: ["1L1"],
+			watergun: ["1L1"], // First inital move
 			withdraw: ["1L26"],
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	omastar: {
 		learnset: {
-			barrage: ["1L1"],
+			barrage: ["1L3"], // Third inital move
 			barrier: ["1L44"],
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L1"], // First inital move
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			confuseray: ["1M"],
 			constrict: ["1M"],
-			dig: ["1L1"],
+			dig: ["1L2"], // Second inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			eggbomb: ["1M", "1L50"],
@@ -4726,12 +4803,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			surf: ["1M"],
 			takedown: ["1M"],
-			withdraw: ["1L1"],
+			withdraw: ["1L4"], // Fourth inital move
 		},
 	},
 	kabuto: {
 		learnset: {
-			absorb: ["1L1"],
+			absorb: ["1L1"], // First inital move
 			barrage: ["1L37"],
 			bide: ["1M"],
 			bodyslam: ["1M"],
@@ -4751,8 +4828,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			razorwind: ["1M"],
 			reflect: ["1M"],
 			rest: ["1M"],
-			rockthrow: ["1L1"],
-			sharpen: ["1L1"],
+			rockthrow: ["1L3"], // Third inital move
+			sharpen: ["1L2"], // Second inital move
 			solarbeam: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -4760,15 +4837,18 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			vicegrip: ["1L22"],
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	kabutops: {
 		learnset: {
-			barrage: ["1L1"],
+			barrage: ["1L4"], // Fourth inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
 			cut: ["1M"],
-			dig: ["1M", "1L1"],
+			dig: ["1M", "1L2"], // Second inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			eggbomb: ["1M"],
@@ -4777,7 +4857,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			megadrain: ["1M", "1L1"],
+			megadrain: ["1M", "1L3"], // Third inital move
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
@@ -4795,16 +4875,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swordsdance: ["1M", "1L44"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			vicegrip: ["1L1"],
+			vicegrip: ["1L1"], // First inital move
 			whirlwind: ["1M"],
 		},
 	},
 	aerodactyl: {
 		learnset: {
-			agility: ["1L1"],
-			barrage: ["1L1"],
+			agility: ["1L1"], // First inital move
+			barrage: ["1L2"], // Second inital move
 			bide: ["1M"],
-			bite: ["1L1"],
+			bite: ["1L3"], // Third inital move
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			dragonrage: ["1M"],
@@ -4822,18 +4902,21 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rockslide: ["1L51"],
 			skyattack: ["1M", "1L60"],
 			softboiled: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			substitute: ["1M"],
 			supersonic: ["1L31"],
 			swift: ["1M"],
 			takedown: ["1M", "1L39"],
 			whirlwind: ["1M"],
-			wingattack: ["1L1"],
+			wingattack: ["1L4"], // Fourth inital move
 		},
+		encounters: [
+			{generation: 1, level: 25},
+		],
 	},
 	snorlax: {
 		learnset: {
-			amnesia: ["1L1"],
+			amnesia: ["1L2"], // Second inital move
 			bide: ["1M"],
 			bodyslam: ["1M", "1L36"],
 			bubblebeam: ["1M"],
@@ -4844,26 +4927,26 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			fissure: ["1M", "1L61"],
 			flamethrower: ["1M"],
 			harden: ["1L49"],
-			headbutt: ["1L1"],
+			headbutt: ["1L3"], // Third inital move
 			hydropump: ["1M"],
 			hyperbeam: ["1M", "1L54"],
 			icebeam: ["1M"],
-			lick: ["1L1"],
+			lick: ["1L1"], // First inital move
 			megapunch: ["1M"],
 			metronome: ["1M", "1L31"],
 			mimic: ["1M"],
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			psychicm: ["1M"],
+			psychic: ["1M"],
 			reflect: ["1M"],
-			rest: ["1M", "1L1"],
+			rest: ["1M", "1L4"], // Fourth inital move
 			roar: ["1L40"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
 			sludge: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -4872,21 +4955,24 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 30},
+		],
 	},
 	articuno: {
 		learnset: {
-			agility: ["1L1"],
-			aurorabeam: ["1L1"],
+			agility: ["1L3"], // Third inital move
+			aurorabeam: ["1L1"], // First inital move
 			bide: ["1M"],
 			blizzard: ["1L65"],
 			bubblebeam: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
 			fly: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M", "1L51"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			poisongas: ["1M"],
 			razorwind: ["1M", "1L53"],
 			reflect: ["1M", "1L56"],
@@ -4897,14 +4983,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			swift: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			triattack: ["1L1"],
+			triattack: ["1L4"], // Fourth inital move
 			whirlwind: ["1M"],
-			wingattack: ["1L1"],
+			wingattack: ["1L2"], // Second inital move
 		},
+		encounters: [
+			{generation: 1, level: 50},
+		],
 	},
 	zapdos: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L3"], // Third inital move
 			bide: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -4920,7 +5009,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			rest: ["1M"],
 			skyattack: ["1M", "1L71"],
 			softboiled: ["1M", "1L60"],
-			sonicboom: ["1L1"],
+			sonicboom: ["1L1"], // First inital move
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
@@ -4928,14 +5017,17 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunder: ["1L65"],
 			thunderbolt: ["1M", "1L51"],
 			thunderwave: ["1M"],
-			triattack: ["1L1"],
+			triattack: ["1L4"], // Fourth inital move
 			whirlwind: ["1M"],
-			wingattack: ["1L1"],
+			wingattack: ["1L2"], // Second inital move
 		},
+		encounters: [
+			{generation: 1, level: 50},
+		],
 	},
 	moltres: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L3"], // Third inital move
 			bide: ["1M"],
 			doubleedge: ["1M"],
 			doubleteam: ["1M"],
@@ -4951,17 +5043,20 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			reflect: ["1M"],
 			rest: ["1M"],
 			skyattack: ["1M", "1L71"],
-			smokescreen: ["1M", "1L1"],
+			smokescreen: ["1M", "1L1"], // First inital move
 			softboiled: ["1M", "1L60"],
 			solarbeam: ["1M"],
 			substitute: ["1M"],
 			swift: ["1M"],
 			takedown: ["1M"],
 			teleport: ["1M"],
-			triattack: ["1L1"],
+			triattack: ["1L4"], // Fourth inital move
 			whirlwind: ["1M"],
-			wingattack: ["1L1"],
+			wingattack: ["1L2"], // Second inital move
 		},
+		encounters: [
+			{generation: 1, level: 50},
+		],
 	},
 	dratini: {
 		learnset: {
@@ -4975,7 +5070,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dragonrage: ["1M"],
 			flamethrower: ["1M"],
 			glare: ["1L16"],
-			gust: ["1L1"],
+			gust: ["1L1"], // First inital move
 			hydropump: ["1M"],
 			icebeam: ["1M"],
 			lightscreen: ["1M"],
@@ -4989,13 +5084,16 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			substitute: ["1M"],
 			surf: ["1M"],
 			swift: ["1M"],
-			tailwhip: ["1L1"],
+			tailwhip: ["1L2"], // Second inital move
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 			whirlwind: ["1M", "1L21"],
 			wrap: ["1L26"],
 		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
 	},
 	dragonair: {
 		learnset: {
@@ -5009,7 +5107,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			dragonrage: ["1M", "1L53"],
 			flamethrower: ["1M"],
 			fly: ["1M"],
-			glare: ["1L1"],
+			glare: ["1L2"], // Second inital move
 			horndrill: ["1M"],
 			hydropump: ["1M"],
 			icebeam: ["1M"],
@@ -5017,7 +5115,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			quickattack: ["1L1"],
+			quickattack: ["1L1"], // First inital move
 			razorwind: ["1M", "1L43"],
 			reflect: ["1M"],
 			rest: ["1M"],
@@ -5029,14 +5127,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 			waterfall: ["1L48"],
-			whirlwind: ["1M", "1L1"],
+			whirlwind: ["1M", "1L3"], // Third inital move
 			wingattack: ["1L28"],
-			wrap: ["1L1"],
+			wrap: ["1L4"], // Fourth inital move
 		},
 	},
 	dragonite: {
 		learnset: {
-			agility: ["1L1"],
+			agility: ["1L3"], // Third inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
@@ -5058,12 +5156,12 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mimic: ["1M"],
 			mist: ["1M"],
 			poisongas: ["1M"],
-			razorwind: ["1M", "1L1"],
+			razorwind: ["1M", "1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			skyattack: ["1M", "1L65"],
-			slam: ["1L1"],
-			strengh: ["1M"],
+			slam: ["1L2"], // Second inital move
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -5071,14 +5169,14 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			takedown: ["1M"],
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
-			waterfall: ["1L1"],
+			waterfall: ["1L4"], // Fourth inital move
 			whirlwind: ["1M"],
 		},
 	},
 	mewtwo: {
 		learnset: {
 			amnesia: ["1L73"],
-			barrier: ["1L1"],
+			barrier: ["1L3"], // Third inital move
 			bide: ["1M"],
 			bodyslam: ["1M"],
 			bubblebeam: ["1M"],
@@ -5091,7 +5189,6 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			earthquake: ["1M"],
 			flamethrower: ["1M"],
 			flash: ["1M"],
-			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
 			jumpkick: ["1L76"],
@@ -5099,27 +5196,30 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			megapunch: ["1M"],
 			metronome: ["1M"],
 			mimic: ["1M"],
+			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			psychic: ["1L1"],
-			psychicm: ["1M"],
+			psychic: ["1L4", "1M"], // Fourth inital move
 			psywave: ["1L80"],
 			razorwind: ["1M"],
-			recover: ["1L1"],
+			recover: ["1L1"], // First inital move
 			reflect: ["1M"],
 			rest: ["1M"],
 			seismictoss: ["1M"],
 			selfdestruct: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
-			swift: ["1M", "1L1"],
+			swift: ["1M", "1L2"], // Second inital move
 			takedown: ["1M"],
 			teleport: ["1M"],
 			thunderbolt: ["1M"],
 			thunderwave: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 70},
+		],
 	},
 	mew: {
 		learnset: {
@@ -5149,7 +5249,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			hydropump: ["1M"],
 			hyperbeam: ["1M"],
 			icebeam: ["1M"],
-			kinesis: ["1L1"],
+			kinesis: ["1L2"], // Second inital move
 			lightscreen: ["1M"],
 			megadrain: ["1M"],
 			megapunch: ["1M"],
@@ -5158,9 +5258,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			mist: ["1M"],
 			payday: ["1M"],
 			poisongas: ["1M"],
-			pound: ["1L1"],
-			psychic: ["1L40"],
-			psychicm: ["1M"],
+			pound: ["1L1"], // First inital move
+			psychic: ["1L40", "1M"],
 			psywave: ["1L80"],
 			razorwind: ["1M"],
 			reflect: ["1M"],
@@ -5172,7 +5271,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			smokescreen: ["1M"],
 			softboiled: ["1M"],
 			solarbeam: ["1M"],
-			strengh: ["1M"],
+			strength: ["1M"],
 			submission: ["1M"],
 			substitute: ["1M"],
 			surf: ["1M"],
@@ -5186,5 +5285,8 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			triattack: ["1L50"],
 			whirlwind: ["1M"],
 		},
+		encounters: [
+			{generation: 1, level: 60},
+		],
 	},
 }
