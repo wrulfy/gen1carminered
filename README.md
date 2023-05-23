@@ -1,55 +1,46 @@
-Gen 1, the beginning
+Pokemon Carmine Red
 ====================
 
 Introduction
 ------------
-Generation 1 includes the original japanese Green and Red, Blue, and Yellow games.
-It was very different than the game we get to know today, and it was, in fact, very different to Gen 2 as well.
-The mechanics were very different, and the game was quite glitched, but most glitches were important parts of the metagame.
-There were only 151 Pokémon plus MissingNo, just a handful of moves, no abilities, no items, all stats were
-EVd to the max and we had some kind of different IVs, which maxed at 15 and every point gave 2 to the stat, so in
-a similar fashion, Pokes used to have 30 IVs on each stat.
+A mod for Pokemon Showdown, specifically the Dragon Heaven server. This mod is based off my Pokemon Red Romhack: "Carmine Red". It aims for a general feel of gen 1 in terms of messed up code, except I buff a lot of weaker mons and provide actual moves to types that only could dream of using stab moves.
 
-The following sources have been used and extremly useful when developing this mod:
-https://raw.github.com/po-devs/pokemon-online/master/bin/database/rby-stuff.txt
-https://www.smogon.com/rb/articles/differences
-https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/#post-5878612
+I wanted to make a Pet Mod of my romhack so competitive players could have fun with it.
 
-Special Stat
+
+Buffed Pokemon
 ------------
-Back then, there weren't Special Defense and Special Attack stats. It was just "Special", and moves raised and lowered it.
-That's why Special walls were so OP in Gen 1.
+A lot of pokemon that got the shorter end of the stick have been buffed though several means. Other have been buffed only with the prupose of having similar BST to counterparts.
 
-In order to achieve a similar effect without heavily changing other scripts rather than just the mod, the mod's Pokedex
-and the mod's moves have been edited in order to emulate it, making all Pokémon have the old special stat in both SpA and
-SpD and making moves raise and lower both SpA and SpD at the same time.
+Out of all the fully evolved pokemon, there's only a single nerf because I wanted to have some pokemon sorted a certain way. Every other have been either buffed or redistributed, and only a handful haven't been touched at all
 
-Critical Hits
+Almost a third of all the pokemon have undergo some type change. Some of them are for variety, some for flavor, and some because I felt like it. If some of these type changes feel too harsh, consider them like if they were regional variants within the game.
+
+Pretty much all pokemon get STAB moves of their types. And their learnsets are all better overall
+
+
+Buffed Moves
 -------------
-Critical hits in Gen 1 work with Speed. The faster you are, the more you crit.
-This is the regular critical hit formula:
-CH% = BaseSpeed * 100 / 512.
-This is the high critical hit moves formula:
-CH% = BaseSpeed * 100 / 64.
-That means that a Persian with Slash is going to crit. This made the metagame adapt so OU prefers all the faster Pokémon
-in the game.
+A lot of bad/useless moves had been repruposed as completely different moves. Unlike in vanilla gen 1, where types like bug, ghost, and dragon, have no real usable damage-dealing moves, all types now have usable moves.
 
-However, if you used Focus Energy, your crit rate was ruined instead of increased, so if you were slower than your
-opponent you couldn't crit at all.
+Some move effects are missing due to their original move have been repruposed. For example the effect of haze no longer exist since is now a different move.
 
-Status
+All move effects come from already existing effects within gen 1 code. Some come from unused effects, like 33% of lowering evasion by 1 stage.
+
+
+Types
 ------
-Freeze never thaws unless hit by a Fire-type attack or by Haze.
-Sleep lasts 1-7 turns and you wake up at the end of the turn.
+The type matchup table have been altered a bit. For example, bug now resist Psychic.
+https://raw.githubusercontent.com/wrulfy/carminered/main/documentation/type_machup.png
 
-1/256 miss
+Ghost is also a special type, and Dragon is a Physical type
+
+
+Other
 ----------
-All moves but Swift and Bide (while on duration, not first hit) have a 1/256 chance to miss.
+Sleep now last between 2 and 4 turns, instead of 1 to 7 turns
 
-Partial Trapping Moves
-----------------------
-Partial trapping moves let either Pokémon switch but target will be unable to move for its duration.
+There's a handful of other changes I wanted to implement within my romhack that didn't make the cut, while those would be extremely easy to implement in this showdown mod, I would rather much prefer to keep it accurate to the source material.
 
-TODO. Glitches not implemented
-------------------------------
-There are a couple of divisions by zero in the original game in the cartridge. Those have not been implemented.
+If you want to try the romhack itself, or if you want to look at the documentation beforehand, please check the romhack's repository
+https://github.com/wrulfy/carminered

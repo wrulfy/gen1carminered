@@ -1407,7 +1407,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		shortDesc: "No additional effect.",
 		accuracy: 100,
 		basePower: 100,
-		category: "Status",
 		name: "Splash",
 		pp: 10,
 		priority: 0,

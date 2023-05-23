@@ -217,7 +217,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		// Store 0 damage for last damage if move failed or dealt 0 damage.
 		// This only happens on moves that don't deal damage but call GetDamageVarsForPlayerAttack (disassembly).
 		const neverDamageMoves = [
-			'conversion', 'haze', 'mist', 'focusenergy', 'confuseray', 'supersonic', 'transform', 'lightscreen', 'reflect', 'substitute', 'mimic', 'leechseed', 'splash', 'softboiled', 'recover', 'rest',
+			'conversion', 'supersonic', 'transform', 'lightscreen', 'reflect', 'substitute', 'mimic', 'leechseed', 'softboiled', 'recover', 'rest',
 		];
 		if (
 			!damage &&
@@ -324,7 +324,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				if (Array.isArray(hits)) {
 					// Yes, it's hardcoded... meh
 					if (hits[0] === 2 && hits[1] === 5) {
-						hits = this.sample([2, 2, 3, 3, 4, 5]);
+						hits = this.sample([2, 2, 2, 3, 3, 3, 4, 5]);//this was wrong now is fixed
 					} else {
 						hits = this.random(hits[0], hits[1] + 1);
 					}

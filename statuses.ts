@@ -46,7 +46,7 @@ export const Statuses: {[k: string]: ModdedPureEffectData} = {
 				pokemon.removeVolatile('twoturnmove');
 				pokemon.removeVolatile('fly');
 				pokemon.removeVolatile('dig');
-				pokemon.removeVolatile('solarbeam');
+				pokemon.removeVolatile('withdraw');
 				pokemon.removeVolatile('skullbash');
 				pokemon.removeVolatile('partialtrappinglock');
 				return false;

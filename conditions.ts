@@ -1,7 +1,7 @@
 /**
  * Status worked very differently in Gen 1.
  * - Sleep lasted longer, had no reset on switch and took a whole turn to wake up.
- * - Frozen only thaws when hit by fire or Haze.
+ * - Frozen only thaws when hit by fire.
  *
  * Stat boosts (-speed, -atk) also worked differently, so they are
  * separated as volatile statuses that are applied on switch in, removed
@@ -46,7 +46,7 @@ export const Conditions: {[id: string]: ModdedConditionData} = {
 				pokemon.removeVolatile('twoturnmove');
 				pokemon.removeVolatile('fly');
 				pokemon.removeVolatile('dig');
-				pokemon.removeVolatile('solarbeam');
+				pokemon.removeVolatile('withdraw');
 				pokemon.removeVolatile('skullbash');
 				pokemon.removeVolatile('partialtrappinglock');
 				return false;
@@ -153,7 +153,7 @@ export const Conditions: {[id: string]: ModdedConditionData} = {
 				pokemon.removeVolatile('twoturnmove');
 				pokemon.removeVolatile('fly');
 				pokemon.removeVolatile('dig');
-				pokemon.removeVolatile('solarbeam');
+				pokemon.removeVolatile('withdraw');
 				pokemon.removeVolatile('skullbash');
 				pokemon.removeVolatile('partialtrappinglock');
 				return false;

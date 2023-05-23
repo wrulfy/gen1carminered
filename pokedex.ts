@@ -625,6 +625,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	kabuto: {
 		inherit: true,
+		types: ["Rock", "Grass"],
 		baseStats: {hp: 30, atk: 80, def: 90, spa: 45, spd: 45, spe: 55},
 	},
 	kabutops: {
@@ -634,7 +635,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	aerodactyl: {
 		inherit: true,
-		types: ["Rock", "Grass"],
 		baseStats: {hp: 80, atk: 105, def: 65, spa: 65, spd: 65, spe: 135},
 	},
 	snorlax: {
