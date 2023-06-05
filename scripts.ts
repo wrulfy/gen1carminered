@@ -12,6 +12,16 @@ export const Scripts: ModdedBattleScriptsData = {
 			(this.data.Pokedex[i] as any).gender = 'N';
 			(this.data.Pokedex[i] as any).eggGroups = null;
 		}
+		const specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Psychic', 'Ghost'];
+		let newCategory = '';
+		for (const i in this.data.Moves) {
+			if (!this.data.Moves[i]) console.log(i);
+			if (this.data.Moves[i].category === 'Status') continue;
+			newCategory = specialTypes.includes(this.data.Moves[i].type) ? 'Special' : 'Physical';
+			if (newCategory !== this.data.Moves[i].category) {
+				this.modData('Moves', i).category = newCategory;
+			}
+		}
 	},
 	// Gen 1 stores the last damage dealt by a move in the battle.
 	// This is used for the move Counter.
