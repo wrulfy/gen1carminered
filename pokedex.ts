@@ -233,11 +233,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	psyduck: {
 		inherit: true,
-		baseStats: {hp: 50, atk: 52, def: 50, spa: 60, spd: 60, spe: 55},
+		baseStats: {hp: 50, atk: 52, def: 50, spa: 65, spd: 65, spe: 55},
 	},
 	golduck: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 82, def: 80, spa: 90, spd: 90, spe: 85},
+		types: ["Water", "Ghost"],
+		baseStats: {hp: 80, atk: 77, def: 80, spa: 95, spd: 95, spe: 85},
 	},
 	mankey: {
 		inherit: true,
